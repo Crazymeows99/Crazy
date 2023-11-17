@@ -4,37 +4,12 @@
 <head>
 <meta charset="utf-8" />
 <title> Crazy?</title>
-<script>
-
-
-function blah() {
-	var r_text = new Array (); 
-	r_text[0] = "I know where you sleep"; 
-	r_text[1] = "Im in your walls"; 
-	r_text[2] = "I will find you"; 
-	r_text[3] = "Check your closet before you sleep tonight"; 
-	r_text[4] = "Youre not suppose to be here"; 
-	r_text[5] = "Open the door, its cold in here";
-	r_text[6] = "Its always watching";
-	r_text[7] = "Your skin looks uncomfy, peel it off";
-	r_text[8] = "Your bones need to breathe, take them out";
-	r_text[9] = "Help me..";
-	r_text[10] = "Its cold down here";
-	r_text[11] = "...";
-	r_text[12] = "I can see you";
-	r_text[13] = "The bugs, theyre in your skin";
-	r_text[14] = "Crazy? I was crazy once. They locked me in a room. A rubber room. A rubber room with rats. And rats make me crazy. Crazy?";
-	r_text[15] = "Youre Gay";
-	var i = Math.floor(r_text.length * Math.random());
-	let thing = document.getElementById("hi");
-	thing.innerHTML = r_text[i];
-};
-</script>
+<script src="message.js"></script>
 </head> 
 
 <section>
 <article>
-<body style="background-color: #fbf6f9; text-align: center; font-size: xx-large; font-size: xx-large" onload="blah()">
+<body style="background-color: #fbf6f9; text-align: center; font-size: xx-large; font-size: xx-large" onload="getMessage()">
 <img src="subaru-duck-dance-subaru-duck.gif" style="height:200px; width: 200px"> 
 <br>
 <img src="pink heart.png" style="height: 20px; width: 20px" /> 
