@@ -23,5 +23,13 @@ const messages = [
 	"Youre Gay",
 	"weve been trying to contact you reguarding your cars extended warranty.",
 	"Quack",
+	"Hi!", 
+	"My name is Walter Hartwell White. I live at 308 Negra Arroyo Lane Albuquerque New Mexico 87104. This is my confession.",
+	"pop pop pop pop pop pop pop",
+	"Good Soup",
+	"me-wow",
+	"Five Nights at FrogLegs",
+	"This homepage is courtesy of Justus Stiefel, Nickolai Wetzel, Jett Ashburn, and all of its supporters, users, and editors",
+	"Gaslighting isn't real, youre crazy.",
   ]
 
