@@ -1,10 +1,10 @@
 function getMessage() {
-	var i = Math.floor(r_text.length * Math.random());
+	var i = Math.floor(messages.length * Math.random());
 	let thing = document.getElementById("hi");
 	thing.innerHTML = messages[i];
 };
 
-array messages = [
+const messages = [
 	"I know where you sleep",
 	"Im in your walls",
 	"I will find you",
