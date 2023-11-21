@@ -38,6 +38,5 @@ const messages = [
 	"you are looking at your new step dad",
 	"you're so purdy",
 	"argggggggggggggggggggg",
-	"",
   ]
 
