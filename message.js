@@ -29,7 +29,6 @@ const messages = [
 	"Good Soup",
 	"me-wow",
 	"Five Nights at FrogLegs",
-	"This homepage is courtesy of Justus Stiefel, Nickolai Wetzel, Jett Ashburn, and all of its supporters, users, and editors",
 	"Gaslighting isn't real, youre crazy.",
 	"Dont trust the last message",
 	"I really really love pancakes",
