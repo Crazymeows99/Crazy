@@ -32,5 +32,12 @@ const messages = [
 	"This homepage is courtesy of Justus Stiefel, Nickolai Wetzel, Jett Ashburn, and all of its supporters, users, and editors",
 	"Gaslighting isn't real, youre crazy.",
 	"Dont trust the last message",
+	"I really really love pancakes",
+	"Do i look Dapper?",
+	"stop looking at me",
+	"you are looking at your new step dad",
+	"you're so purdy",
+	"argggggggggggggggggggg",
+	"",
   ]
 
