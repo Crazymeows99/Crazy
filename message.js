@@ -37,5 +37,11 @@ const messages = [
 	"You are looking at your new step dad",
 	"You're so purdy",
 	"Argggggggggggggggggggg",
+	"Save the boobies (stop breast cancer)",
+	"my name is James^",
+	"Mr. Boonie got pied in the face, Laugh Out Loud",
+	"Coding is confusing ngl",
+	"I hope it is nice looking outside",
+	"Wake up Brian",
   ]
 
