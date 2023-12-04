@@ -79,18 +79,30 @@ footer 								{text-align: center;
 									background-color: #ee3883;
 									color: white;
 									position: fixed;
-									margin-left: -8.5px;
+									margin-left: -8.3px;
 									bottom: 0;
 									width: 100%;
 									height: 40px;
 									font-size:small;}
+									
+.row								{display: flex;
+									flex-wrap: wrap;
+									padding: 0 4px;}
+							
+.column								{flex: 25%;
+									max-width: 25%;
+									padding: 0 4px;}
+
+.column img							{margin-top: 8px;
+									vertical-align: middle;
+									width: 100%;}
 -->
 </style type="text/css">
 
 </head> 
 
 <body id="top" style="background-image: url('background1.jpg'); text-align: center;" onload="getMessage()">
-	<article>
+	<article width="100%">
 		<section style="background-color: #fbf6f9; margin-top: -40px; margin-left: -10px; width: 100vw; padding-right: 2px; padding-top: 10px">
 			<h1 style="color: #5bc2cd; font-size: 2em">Computer Networking 2023-2024</h1>
 			
@@ -129,15 +141,32 @@ footer 								{text-align: center;
 					</div>
 				</div>
 			</nav>
-			<br />
 		</section>
-		
-		<hr style="height: 1000px; width: 10%" />
+		<!-- For some reason if you put anything under the nav to make it scroll down it adds a scroll bar to the right -->
+		<section>
+		<div class="row">
+			<div class="column">
+				<img style="width: 90%" src="p.jpg">
+				<img style="width: 90%" src="p.jpg">
+				<img style="width: 90%" src="p.jpg">
+			</div>
+			
+			<div class="column">
+				<img style="width: 90%" src="p.jpg">
+				<img style="width: 90%" src="p.jpg">
+				<img style="width: 90%" src="p.jpg">
+			</div>
+			
+			<div class="column">
+				<img style="width: 90%" src="p.jpg">
+				<img style="width: 90%" src="p.jpg">
+				<img style="width: 90%" src="p.jpg">
+			</div>
+		</div>
+		</section>
 	</article>
-	
-
 </body>
 <footer>
-	<p>Have Suggestions? Send me an E-mail at <a href="mailto:nwetzel@sun-tech.org">nwetzel@sun-tech.org</a></p>
+	<p>Have Suggestions? Send us an E-mail at <a href="mailto:nwetzel@sun-tech.org">nwetzel@sun-tech.org</a></p>
 </footer>
 </html>
