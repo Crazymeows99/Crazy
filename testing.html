@@ -1,0 +1,217 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+<meta charset="utf-8" />
+
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+
+<title> Crazy?</title>
+
+<script src="message.js"></script>
+<script src="darkMode.js"></script>
+<script>
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML =
+    h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 1000);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};
+    return i;
+}
+</script>
+<script>
+	function startup() {
+		getMessage();
+		toggleDarkMode();
+		startTime();
+	}
+</script>
+
+<style type="text/css">
+<!--
+body 								{font-family: 'Roboto';font-size: 20px;
+									background-repeat: no-repeat;
+									background-attachment: fixed;
+									background-size: cover;
+									overflow-x: hidden;}
+					
+nav 								{border: 1px;
+									background-color: #ee3883;
+									color: white;
+									padding: 1%;
+									font-size: 130%;}
+				
+a 									{text-decoration: none;
+									color: white;}
+				
+u 									{text-decoration: none;
+									color: white;}
+				
+a:hover								{color: #5bc2cd;
+									font-weight: bold;
+									Font-size: xlarge;}
+							
+u:hover								{color: #5bc2cd;
+									font-weight: bold;
+									Font-size: xlarge;
+									text-decoration: underline;}
+				
+marquee								{padding: 0;}
+				
+tr.L								{background-color: #ee3883;
+									color: white;}
+				
+tr.I								{background-color: pink;}
+
+
+.dropdown							{display: inline-block;
+									position: relative;}
+					
+.dropdown-content					{display: none;
+									position: absolute;
+									width: 300%;
+									overflow: auto;
+									box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+									border: none;}
+									
+.dropdown:hover .dropdown-content	{display: block;}
+
+.dropdown-content a 				{background-color: #ee3883;
+									text-align: left;
+									display: block;
+									color: #FFFFFF;
+									font-size: 90%;
+									padding: 5px;
+									text-decoration: none;}
+
+.dropdown-content a:hover			{color: #5bc2cd;
+									background-color: #ee3883;}
+
+button								{border: 1px;
+									background-color: #ee3883;
+									color: white;
+									padding: 1%;
+									font-size: 100%;
+									width: 100%;}
+
+footer 								{text-align: center;
+									background-color: #ee3883;
+									color: white;
+									position: fixed;
+									margin-left: -8.3px;
+									bottom: 0;
+									width: 100%;
+									height: 40px;
+									font-size:small;}
+									
+.row								{display: flex;
+									flex-wrap: wrap;
+									padding: 0 4px;}
+							
+.column								{flex: 25%;
+									max-width: 25%;
+									padding: 0 4px;}
+
+.column img							{margin-top: 8px;
+									vertical-align: middle;
+									width: 100%;}
+
+table								{margin-left: auto;
+									margin-right: auto;}
+
+th									{padding: 10px;}
+-->
+</style type="text/css">
+
+</head> 
+
+<body onload="startTime()">
+<div id="txt"></div>
+</body>
+
+<body id="top" style="background-image: url('background1.jpg'); text-align: center;" onload="startup()">
+
+	<article width="100%">
+		<section class="dm dmH000000 lmHfbf6f9" style="background-color: #fbf6f9; margin-top: -40px; margin-left: -10px; width: 100vw; padding-right: 2px; padding-top: 10px; padding-bottom: 0px;">
+			<h1><img src="Class Titlehead New.png" width="95%"></h1>
+
+			<div style="font-size: xx-large">
+				<marquee scrollamount="5" behavior="alternate">
+					<img src="ezgif.com-crop.gif" style="margin right: 0px; width: 10%; margin-right: -500px"> 
+				</marquee>
+				<p style="font-size: 18px; color: #5bc2cd; margin-top: 0px">James says:</p>
+	
+				<div style="color: #5bc2cd; padding-left: 10px; padding-right: 10px" id="hi"></div>
+		
+				<img src="Fixed Heart.png" style="height: 2%; width: 2%;" />
+			</div>
+			<hr style="height:5px; background-color: #ee3883; border: none; width: 100.13%" />
+		</section>
+<br />
+
+<br />
+		<section>
+			<nav>
+				<a href="https://studentsis.csiu-technology.org/suntech" target="_blank"><u>Gradebook</u></a>
+				|
+				<a href="https://campus.careersafeonline.com/main.k2" target="_blank"><u>CareerSafe</u></a>
+				| 
+				<a href="https://newegg.com"><u>NewEgg</u></a>
+				|
+				<a href="https://www.nitrotype.com/garage"><u>Nitrotype</u></a>
+				|
+				<a href="https://open.spotify.com/" target="_blank"><u>Spotify</u></a>
+				|
+				<div class="dropdown">
+					<button><u>Notes</u></button>
+					
+					<div class="dropdown-content">
+						<a href="https://suntechorg-my.sharepoint.com/:w:/g/personal/bvoneida_sun-tech_org/EaKsuHVfCsFEojs_AskSuTABRfcNbiV6B2uzsfjjhRqC9Q" target="_blank"><u>A+ notes</u></a>
+						<a href="https://suntechorg-my.sharepoint.com/:w:/g/personal/bvoneida_sun-tech_org/Ea0DMUii9bpNibXXoe_ExAQB2b8Gn4LBNLgeyIMuNh0u5w" target="_blank"><u>C-Tech Notes</u></a>
+						<a href="https://suntechorg-my.sharepoint.com/:w:/g/personal/bvoneida_sun-tech_org/EY7yv_hN1HdHp1YvtfkHjOcBULbjkPsjmjugfiOYFR4qCA" target="_blank"><u>Network+ Notes</u></a>
+					</div>
+				</div>
+			</nav>
+		</section>
+		<!-- For some reason if you put anything under the nav to make it scroll down it adds a scroll bar to the right: nuh uh -->
+<br />
+		<section>
+		
+		<img width="75%" src="Gallery Titlehead.png">
+		
+		<table style="text-align: center">
+			<tr>
+				<th><img src="p.jpg"</th>
+				<th><img src="p.jpg"</th>
+				<th><img src="p.jpg"</th>
+			</tr>
+			
+			<tr>
+				<th><img src="p.jpg"</th>
+				<th><img src="p.jpg"</th>
+				<th><img src="p.jpg"</th>
+			</tr>
+			
+			<tr>
+				<th><img src="p.jpg"</th>
+				<th><img src="p.jpg"</th>
+				<th><img src="p.jpg"</th>
+			</tr>
+		</table>	
+			
+		</section>
+	
+	</article>
+</body>
+<footer>
+	<p>Have Suggestions? Send us an E-mail at <a href="mailto:nwetzel@sun-tech.org">nwetzel@sun-tech.org</a></p>
+</footer>
+</html>
