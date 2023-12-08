@@ -10,6 +10,14 @@
 
 <script src="message.js"></script>
 <script src="darkMode.js"></script>
+<script src="clock.js"></script>
+<script>
+	function startup() {
+		getMessage();
+		toggleDarkMode();
+		//clock();
+	}
+</script>
 
 <style type="text/css">
 <!--
@@ -108,7 +116,7 @@ th									{padding: 10px;}
 
 </head> 
 
-<body id="top" style="background-image: url('background1.jpg'); text-align: center;" onload="getMessage()">
+<body id="top" style="background-image: url('background1.jpg'); text-align: center;" onload="startup()">
 	<article width="100%">
 		<section style="background-color: #fbf6f9; margin-top: -40px; margin-left: -10px; width: 100vw; padding-right: 2px; padding-top: 10px; padding-bottom: 0px;">
 			<h1><img src="Class Titlehead New.png" width="95%"></h1>
