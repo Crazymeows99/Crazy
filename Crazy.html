@@ -40,14 +40,11 @@ u 									{text-decoration: none;
 									color: white;}
 				
 a:hover								{color: #5bc2cd;
-									font-weight: bolder;
-									font-style: italic;
-									Font-size: xlarge;}
+									font-style: italic;}
 							
 u:hover								{color: #5bc2cd;
-									font-weight: bold;
-									Font-size: xlarge;
-									text-decoration: underline;}
+									text-decoration: underline;
+									font-style: italic;}
 				
 marquee								{padding: 0;}
 				
@@ -114,9 +111,40 @@ table								{margin-left: auto;
 
 th									{padding: 15px;}
 
+td.mtf								{padding: 15px;}
+
 img.border							{border-style: solid;
 									border-width: 5px;
 									border-color: #ee3883;}
+
+a.mtf								{/*position: absolute;
+									top: 150px;*/
+									display: block;
+									align-img: center;
+									font-weight: bold;
+									font-size: 1em;
+									font-family: sans-serif;
+									border-width: 5px;
+									text-decoration: none;
+									border-color: white;}
+									
+a.mtf a:hover						{background-color: white;
+									border-width: 5px;
+									font-size: 1em;
+									border-color: white;}
+
+span								{display: none;
+									font-size: 1em;
+									margin-left: auto;
+									margin-right: auto;
+									width: 50%;}
+
+a:hover span						{display: block;
+									color: white;
+									background-color: #ee3883;
+									font-size: 12px;
+									font-size: 1em;
+									text-align: center;}
 -->
 </style>
 
@@ -183,11 +211,28 @@ img.border							{border-style: solid;
 		<img width="30%" src="Meet the Founders Titlehead.png">
 		</div>
 
-		<table style="text-align: center">
+		<table style="text-align: center; height: 200px;">
 			<tr>
-				<th><img class="border" width="100%" src="cntpic3.jpg"></th>
-				<th><img class="border" width="100%" src="cntpic4.jpg"></th>
-				<th><img class="border" width="100%" src="cntpic5.jpg"></th>
+				<td class="mtf">
+					<a class="mtf">
+					<span>Justus</span>
+					<img class="border" width="90%" height="20%" src="cntpic3.jpg">
+					</a>
+				</td>
+				
+				<td class="mtf">
+					<a class="mtf">
+					<span>Nickolai</span>
+					<img class="border" width="90%" height="20%" src="cntpic4.jpg">
+					</a>
+				</td>
+				
+				<td class="mtf">
+					<a class="mtf">
+					<span>Jett</span>
+					<img class="border" width="90%" height="20%" src="cntpic5.jpg">
+					</a>
+				</td>
 			</tr>
 		</table>	
 			
@@ -198,12 +243,12 @@ img.border							{border-style: solid;
 <footer>
 	<table height="50px" style="font-size: 11px;" width="100%">
 		<tr>
-			<td width="33%" style="text-align: left; padding-left: 10px;"><p>Have Suggestions? Send us an E-mail at <a href="mailto:nwetzel@sun-tech.org">nwetzel@sun-tech.org</a> or <a href="mailto:jashburn@sun-tech.org" />jashburn@sun-tech.org</a></p></td>
+			<td width="500px" style="text-align: left; padding-left: 10px;"><p>Have Suggestions? Send us an E-mail at <a href="mailto:nwetzel@sun-tech.org">nwetzel@sun-tech.org</a> or <a href="mailto:jashburn@sun-tech.org" />jashburn@sun-tech.org</a></p></td>
 			
-			<td width="30%"><marquee scrollamount="3" behavior="alternate">
+			<td width="500px"><marquee scrollamount="3" behavior="alternate">
 					<img src="newduck.gif" style="margin right: 0px; width: 10%; margin-right: -450px"></marquee></td>
 
-			<td width="33%" style="text-align: right; padding-right: 10px"><p>Disclaimer: The content on this web page does not represent Sun Area Technical Institute.</p></td>	
+			<td width="500px" style="text-align: right; padding-right: 10px"><p>Disclaimer: The content on this web page does not represent Sun Area Technical Institute.</p></td>	
 		</tr>
 	</table>
 </footer>
