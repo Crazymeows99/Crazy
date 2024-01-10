@@ -111,40 +111,37 @@ table								{margin-left: auto;
 
 th									{padding: 15px;}
 
-td.mtf								{padding: 15px;}
-
 img.border							{border-style: solid;
 									border-width: 5px;
 									border-color: #ee3883;}
 
-a.mtf								{/*position: absolute;
-									top: 150px;*/
-									display: block;
-									align-img: center;
-									font-weight: bold;
-									font-size: 1em;
-									font-family: sans-serif;
-									border-width: 5px;
-									text-decoration: none;
-									border-color: white;}
+td									{padding: 10px;}
 									
-a.mtf a:hover						{background-color: white;
-									border-width: 5px;
-									font-size: 1em;
-									border-color: white;}
+.container 							{position: relative;}
 
-span								{display: none;
-									font-size: 1em;
-									margin-left: auto;
-									margin-right: auto;
-									width: 50%;}
+.overlay 							{position: absolute;
+									top: 0;
+									bottom: 0;
+									left: 1.6%;
+									right: 0;
+									height: 98%;
+									width: 96%;
+									opacity: 0;
+									transition: .5s ease;
+									background-color: #ee3883;}
 
-a:hover span						{display: block;
-									color: white;
-									background-color: #ee3883;
-									font-size: 12px;
-									font-size: 1em;
+.container:hover .overlay 			{opacity: 70%;}
+
+.text								{color: white;
+									font-size: 30px;
+									position: absolute;
+									top: 50%;
+									left: 50%;
+									-webkit-transform: translate(-50%, -50%);
+									-ms-transform: translate(-50%, -50%);
+									transform: translate(-50%, -50%);
 									text-align: center;}
+
 -->
 </style>
 
@@ -211,27 +208,35 @@ a:hover span						{display: block;
 		<img width="30%" src="Meet the Founders Titlehead.png">
 		</div>
 
-		<table style="text-align: center; height: 200px;">
+<br />
+
+		<table>
 			<tr>
-				<td class="mtf">
-					<a class="mtf">
-					<span>Justus</span>
-					<img class="border" width="90%" height="20%" src="cntpic3.jpg">
-					</a>
+				<td>
+				<div class="container">
+					<img src="cntpic3.jpg" width="95%" class="border"/>
+					<div class="overlay">
+					<div class="text">Justus</div>
+					</div>
+				</div>
 				</td>
 				
-				<td class="mtf">
-					<a class="mtf">
-					<span>Nickolai</span>
-					<img class="border" width="90%" height="20%" src="cntpic4.jpg">
-					</a>
+				<td>
+					<div class="container">
+					<img src="cntpic4.jpg" width="95%" class="border"/>
+					<div class="overlay">
+					<div class="text">Nickolai</div>
+					</div>
+					</div>
 				</td>
 				
-				<td class="mtf">
-					<a class="mtf">
-					<span>Jett</span>
-					<img class="border" width="90%" height="20%" src="cntpic5.jpg">
-					</a>
+				<td>
+					<div class="container">
+					<img src="cntpic5.jpg" width="95%" class="border"/>
+					<div class="overlay">
+					<div class="text">Jett</div>
+					</div>
+					</div>
 				</td>
 			</tr>
 		</table>	
