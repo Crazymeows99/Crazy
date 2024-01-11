@@ -2,168 +2,204 @@
 
 <html>
 <head>
-<meta charset="utf-8" />
-
-<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-
-<title>Shop</title>
-
-<script src="message.js"></script>
-<script src="darkMode.js"></script>
-<script src="clock.js"></script>
-<script>
-	function startup() {
-		getMessage();
-		toggleDarkMode();
-		clock();
-	}
-</script>
-
-<style type="text/css">
-<!--
-body 								{font-family: 'Roboto';font-size: 20px;
-									background-repeat: no-repeat;
-									background-attachment: fixed;
-									background-size: cover;
-									overflow-x: hidden;}
-					
-nav 								{border: 1px;
-									background-color: #ee3883;
-									color: white;
-									padding: 1%;
-									font-size: 130%;}
-				
-a 									{text-decoration: none;
-									color: white;}
-				
-u 									{text-decoration: none;
-									color: white;}
-				
-a:hover								{color: #5bc2cd;
-									font-weight: bolder;
-									font-style: italic;
-									Font-size: xlarge;}
-							
-u:hover								{color: #5bc2cd;
-									font-weight: bold;
-									Font-size: xlarge;
-									text-decoration: underline;}
-				
-marquee								{padding: 0;}
-				
-tr.L								{background-color: #ee3883;
-									color: white;}
-				
-tr.I								{background-color: pink;}
-
-
-.dropdown							{display: inline-block;
-									position: relative;}
-					
-.dropdown-content					{display: none;
-									position: absolute;
-									width: 300%;
-									overflow: auto;
-									box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
-									border: none;}
-									
-.dropdown:hover .dropdown-content	{display: block;}
-
-.dropdown-content a 				{background-color: #ee3883;
-									text-align: left;
-									display: block;
-									color: #FFFFFF;
-									font-size: 90%;
-									padding: 5px;
-									text-decoration: none;}
-
-.dropdown-content a:hover			{color: #5bc2cd;
-									background-color: #ee3883;}
-
-button								{border: 1px;
-									background-color: #ee3883;
-									color: white;
-									padding: 1%;
-									font-size: 100%;
-									width: 100%;}
-
-footer 								{text-align: center;
-									background-color: #ee3883;
-									color: white;
-									position: fixed;
-									margin-left: -8.3px;
-									bottom: 0;
-									width: 100%;
-									height: 50px;
-									font-size:small;}
-									
-.row								{display: flex;
-									flex-wrap: wrap;
-									padding: 0 4px;}
-							
-.column								{flex: 25%;
-									max-width: 25%;
-									padding: 0 4px;}
-
-.column img							{margin-top: 8px;
-									vertical-align: middle;
-									width: 100%;}
-
-table								{margin-left: auto;
-									margin-right: auto;}
-
-th									{padding: 10px;}
-
-p.k									{float: right;}
-
-.button								{background-color: #ee3883;
-									border: none;
-									color: black;
-									padding: 16px 32px;
-									text-align: center;
-									font-size: 16px;
-									margin: 4px 2px;
-									transition: 0.3s;}
-
-.button:hover						{background-color: #5bc5cd;
-									color: white;}
-  
-.button								{border-radius: 4px;
-									background-color: #ee3883;
-									border: none;
-									color: #FFFFFF;
-									text-align: center;
-									font-size: 28px;
-									padding: 20px;
-									width: 200px;
-									transition: all 0.5s;
-									cursor: pointer;
-									margin: 5px;}
-
-.button span						{cursor: pointer;
-									display: inline-block;
-									position: relative;
-									transition: 0.5s;}
-
-.button span:after					{content: '\00bb';
-									position: absolute;
-									opacity: 0;
-									top: 0;
-									right: -20px;
-									transition: 0.5s;}
-
-.button:hover span					{padding-right: 25px;}
-
-.button:hover span:after			{opacity: 1;
-									right: 0;}
--->
-</style type="text/css">
-
+	<meta charset="utf-8" />
+	
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+	
+	<title>Shop</title>
+	
+	<script src="message.js"></script>
+	
+	<script src="darkMode.js"></script>
+	
+	<script src="clock.js"></script>
+	
+	<script>
+		function startup() {
+			getMessage();
+			toggleDarkMode();
+			clock();
+		}
+	</script>
+	
+	<style type="text/css">
+	<!--
+	a 									{text-decoration: none;
+										color: white;}
+	
+	a:hover								{color: #5bc2cd;
+										font-style: italic;
+										text-decoration: underline;}
+	
+	body 								{font-family: 'Roboto';font-size: 20px;
+										background-repeat: no-repeat;
+										background-attachment: fixed;
+										background-size: cover;
+										overflow-x: hidden;}
+	
+	button								{border: 1px;
+										background-color: #ee3883;
+										color: white;
+										padding: 1%;
+										font-size: 100%;
+										width: 100%;}
+	
+	.button								{background-color: #ee3883;
+										border: none;
+										color: black;
+										padding: 16px 32px;
+										text-align: center;
+										font-size: 16px;
+										margin: 4px 2px;
+										transition: 0.3s;}
+	
+	.button								{border-radius: 4px;
+										background-color: #ee3883;
+										border: none;
+										color: #FFFFFF;
+										text-align: center;
+										font-size: 28px;
+										padding: 20px;
+										width: 200px;
+										transition: all 0.5s;
+										cursor: pointer;
+										margin: 5px;}
+	
+	.button:hover						{background-color: #5bc5cd;
+										color: white;}
+	
+	.button:hover span					{padding-right: 25px;}
+	
+	.button:hover span:after			{opacity: 1;
+										right: 0;}
+	
+	.button span						{cursor: pointer;
+										display: inline-block;
+										position: relative;
+										transition: 0.5s;}
+	
+	.button span:after					{content: '\00bb';
+										position: absolute;
+										opacity: 0;
+										top: 0;
+										right: -20px;
+										transition: 0.5s;}
+	
+	.column								{flex: 25%;
+										max-width: 25%;
+										padding: 0 4px;}
+	
+	.column img							{margin-top: 8px;
+										vertical-align: middle;
+										width: 100%;}
+	
+	.container 							{position: relative;}
+	
+	.container:hover .overlay 			{opacity: 70%;}
+	
+	.dropdown							{display: inline-block;
+										position: relative;}
+	
+	.dropdown-content					{display: none;
+										position: absolute;
+										width: 300%;
+										overflow: auto;
+										box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+										border: none;}
+	
+	.dropdown-content a 				{background-color: #ee3883;
+										text-align: left;
+										display: block;
+										color: #FFFFFF;
+										font-size: 90%;
+										padding: 5px;
+										text-decoration: none;}
+	
+	.dropdown-content a:hover			{color: #5bc2cd;
+										background-color: #ee3883;}
+	
+	.dropdown:hover .dropdown-content	{display: block;}
+	
+	footer 								{text-align: center;
+										background-color: #ee3883;
+										color: white;
+										position: fixed;
+										margin-left: -8.3px;
+										bottom: 0;
+										width: 100%;
+										height: 6%;
+										font-size:small;}
+	
+	img.border							{border-style: solid;
+										border-width: 5px;
+										border-color: #ee3883;}
+	
+	marquee								{padding: 0;}
+	
+	nav 								{border: 1px;
+										background-color: #ee3883;
+										color: white;
+										padding: 1%;
+										font-size: 130%;}
+	
+	.overlay 							{position: absolute;
+										top: 0;
+										bottom: 0;
+										left: 1.7%;
+										right: 0;
+										height: 98%;
+										width: 96%;
+										opacity: 0;
+										transition: .5s ease;
+										background-color: #ee3883;}
+	
+	.row								{display: flex;
+										flex-wrap: wrap;
+										padding: 0 4px;}
+	
+	table								{margin-left: auto;
+										margin-right: auto;}
+	
+	.text								{color: white;
+										font-size: 30px;
+										position: absolute;
+										top: 50%;
+										left: 50%;
+										-webkit-transform: translate(-50%, -50%);
+										-ms-transform: translate(-50%, -50%);
+										transform: translate(-50%, -50%);
+										text-align: center;}
+	
+	th									{padding: 15px;}
+	
+	tr.I								{background-color: pink;}
+	
+	tr.L								{background-color: #ee3883;
+										color: white;}
+	
+	u 									{text-decoration: none;
+										color: white;}
+	
+	u:hover								{color: #5bc2cd;
+										text-decoration: underline;
+										font-style: italic;}
+	
+	::-webkit-scrollbar 				{width: 20px;
+										background-color: #fbf6f9;}
+	
+	::-webkit-scrollbar-thumb			{background: #5bc2cd; 
+										border-radius: 10px;}
+	
+	::-webkit-scrollbar-thumb:hover		{background: #4fa2ab;}
+	
+	::-webkit-scrollbar-track			{box-shadow: inset 0 0 5px grey; 
+										border-radius: 10px;}
+	-->
+	</style type="text/css">
 </head> 
 
 <body id="top" style="background-image: url('background1.jpg'); text-align: center;" onload="startup()">
 	<article width="100%">
-<br />
 		<section>
 			<nav>
 				<a href="https://crazymeows99.github.io/Crazy/Crazy.html"><u>Home</u></a>
@@ -183,58 +219,68 @@ p.k									{float: right;}
 					
 					<div class="dropdown-content">
 						<a href="https://suntechorg-my.sharepoint.com/:w:/g/personal/bvoneida_sun-tech_org/EaKsuHVfCsFEojs_AskSuTABRfcNbiV6B2uzsfjjhRqC9Q" target="_blank"><u>A+ notes</u></a>
+						
 						<a href="https://suntechorg-my.sharepoint.com/:w:/g/personal/bvoneida_sun-tech_org/Ea0DMUii9bpNibXXoe_ExAQB2b8Gn4LBNLgeyIMuNh0u5w" target="_blank"><u>C-Tech Notes</u></a>
+						
 						<a href="https://suntechorg-my.sharepoint.com/:w:/g/personal/bvoneida_sun-tech_org/EY7yv_hN1HdHp1YvtfkHjOcBULbjkPsjmjugfiOYFR4qCA" target="_blank"><u>Network+ Notes</u></a>
 					</div>
 				</div>
 			</nav>
 		</section>
-<br />
+		
+		<br />
+		
 		<section>
-		<div style="background-color: #ee3883">
-		<img width="30%" src="Merch Titlehead.png">
-		</div>
-		<table width="60%" style="text-align: center; padding: 20px">
-			<tr>
-				<th style="padding: 20px"><img width="100%" src="shopphone1.png"</th>
-				<th style="padding: 20px"><img width="100%" src="shopshirt1.png"</th>
-				<th style="padding: 20px"><img width="100%" src="shopmug1.png"</th>
-			</tr>
-			<tr>
-				<th>
-				<a href="gettrolled.html">
-				<button class="button">Purchase</button>
-				</a>
-				</th>
+			<div style="background-color: #ee3883">
+				<img width="30%" src="Merch Titlehead.png">
+			</div>
+			
+			<table width="60%" style="text-align: center; padding: 20px">
+				<tr>
+					<th style="padding: 20px"><img width="100%" src="shopphone1.png"/></th>
+					
+					<th style="padding: 20px"><img width="100%" src="shopshirt1.png"/></th>
+					
+					<th style="padding: 20px"><img width="100%" src="shopmug1.png"/></th>
+				</tr>
 				
-				<th>
-				<a href="https://www.google.com/url?q=https://www.redbubble.com/i/hoodie/Shuba-Duck-by-Okita-Fuyu/78347043.VR8OC%3Fcountry_code%3DCA%26utm_source%3Dgoogle%26utm_medium%3Dorganic-shopping%26utm_campaign%3Dorganic%2Bshopping&opi=95576897&sa=U&ved=0ahUKEwjk-rK-i5KDAxVuHjQIHQQnDEoQguUECNkE&usg=AOvVaw2ejZV7PdJS84jH-lq7_ROR" target="_blank">
-				<button class="button">Purchase</button>
-				</a>
-				</th>
-				
-				<th>
-				<a href="https://www.google.com/url?q=https://www.redbubble.com/i/mug/Pocket-Subaru-Duck-Hololive-by-JR-Art/78919496.9Q0AD%3Fcountry_code%3DUS%26utm_source%3Dgoogle%26utm_medium%3Dorganic-shopping%26utm_campaign%3Dorganic%2Bshopping&opi=95576897&sa=U&ved=0ahUKEwjk-rK-i5KDAxVuHjQIHQQnDEoQgOUECBg&usg=AOvVaw1vOk7DUMSpJPrheSTGCj6z" target="_blank">
-				<button class="button">Purchase</button>
-				</a>
-				</th>
-				
-			</tr>
-		</table>	
+				<tr>
+					<th>
+						<a href="gettrolled.html">
+							<button class="button">Purchase</button>
+						</a>
+					</th>
+					
+					<th>
+						<a href="https://www.google.com/url?q=https://www.redbubble.com/i/hoodie/Shuba-Duck-by-Okita-Fuyu/78347043.VR8OC%3Fcountry_code%3DCA%26utm_source%3Dgoogle%26utm_medium%3Dorganic-shopping%26utm_campaign%3Dorganic%2Bshopping&opi=95576897&sa=U&ved=0ahUKEwjk-rK-i5KDAxVuHjQIHQQnDEoQguUECNkE&usg=AOvVaw2ejZV7PdJS84jH-lq7_ROR" target="_blank">
+							<button class="button">Purchase</button>
+						</a>
+					</th>
+					
+					<th>
+						<a href="https://www.google.com/url?q=https://www.redbubble.com/i/mug/Pocket-Subaru-Duck-Hololive-by-JR-Art/78919496.9Q0AD%3Fcountry_code%3DUS%26utm_source%3Dgoogle%26utm_medium%3Dorganic-shopping%26utm_campaign%3Dorganic%2Bshopping&opi=95576897&sa=U&ved=0ahUKEwjk-rK-i5KDAxVuHjQIHQQnDEoQgOUECBg&usg=AOvVaw1vOk7DUMSpJPrheSTGCj6z" target="_blank">
+							<button class="button">Purchase</button>
+						</a>
+					</th>
+				</tr>
+			</table>	
 		</section>
-	<br />
-	<br />
+		
+		<br />
+		
+		<br />
 	</article>
 </body>
 <footer>
-	<table height="50px" style="font-size: 11px" width="100%">
+	<table style="font-size: 90%;" width="100%" >
 		<tr>
-			<td width="33%" style="text-align: left; padding-left: 10px"><p>Have Suggestions? Send us an E-mail at <a href="mailto:nwetzel@sun-tech.org">nwetzel@sun-tech.org</a> or <a href="mailto:jashburn@sun-tech.org" />jashburn@sun-tech.org</a></p></td>
+			<td width="500px" style="text-align: left; padding-left: .5vw;"><p style="font-size: .9vw">Have Suggestions? Send us an E-mail at <a href="mailto:nwetzel@sun-tech.org">nwetzel@sun-tech.org</a> or <a href="mailto:jashburn@sun-tech.org" />jashburn@sun-tech.org</a></p></td>
 			
-		
-			<td width="30%"><marquee scrollamount="3" behavior="alternate">
-					<img src="newduck.gif" style="margin right: 0px; width: 10%; margin-right: -450px"></marquee></td>
-				<td width="33%" style="text-align: right; padding-right: 10px"><p class="k" >Disclaimer: The content on this web page does not represent Sun Area Technical Institute.</p></td>	
+			<td width="20%"><marquee scrollamount="3" behavior="alternate">
+			
+			<img src="newduck.gif" style="margin right: 0px; width: 10%; margin-right: -450px"></marquee></td>
+
+			<td width="500px" style="text-align: right; padding-right: .5vw"><p style="font-size: .9vw">Disclaimer: The content on this web page does not represent Sun Area Technical Institute.</p></td>	
 		</tr>
 	</table>
 </footer>
