@@ -1,275 +1,288 @@
 <!DOCTYPE HTML>
 
 <html>
-<head>
-<meta charset="utf-8" />
-
-<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-
-<title> Crazy?</title>
-
-<script src="message.js"></script>
-<script src="darkMode.js"></script>
-<script src="clock.js"></script>
-<script>
-	function startup() {
-		getMessage();
-		toggleDarkMode();
-		clock();
-	}
-</script>
-
-<style type="text/css">
-<!--
-body 								{font-family: 'Roboto';font-size: 20px;
-									background-repeat: no-repeat;
-									background-attachment: fixed;
-									background-size: cover;
-									overflow-x: hidden;}
-					
-nav 								{border: 1px;
-									background-color: #ee3883;
-									color: white;
-									padding: 1%;
-									font-size: 130%;}
-				
-a 									{text-decoration: none;
-									color: white;}
-				
-u 									{text-decoration: none;
-									color: white;}
-				
-a:hover								{color: #5bc2cd;
-									font-style: italic;}
-							
-u:hover								{color: #5bc2cd;
-									text-decoration: underline;
-									font-style: italic;}
-				
-marquee								{padding: 0;}
-				
-tr.L								{background-color: #ee3883;
-									color: white;}
-				
-tr.I								{background-color: pink;}
-
-
-.dropdown							{display: inline-block;
-									position: relative;}
-					
-.dropdown-content					{display: none;
-									position: absolute;
-									width: 300%;
-									overflow: auto;
-									box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
-									border: none;}
-									
-.dropdown:hover .dropdown-content	{display: block;}
-
-.dropdown-content a 				{background-color: #ee3883;
-									text-align: left;
-									display: block;
-									color: #FFFFFF;
-									font-size: 90%;
-									padding: 5px;
-									text-decoration: none;}
-
-.dropdown-content a:hover			{color: #5bc2cd;
-									background-color: #ee3883;}
-
-button								{border: 1px;
-									background-color: #ee3883;
-									color: white;
-									padding: 1%;
-									font-size: 100%;
-									width: 100%;}
-
-footer 								{text-align: center;
-									background-color: #ee3883;
-									color: white;
-									position: fixed;
-									margin-left: -8.3px;
-									bottom: 0;
-									width: 100%;
-									height: 6%;
-									font-size:small;}
-									
-.row								{display: flex;
-									flex-wrap: wrap;
-									padding: 0 4px;}
-							
-.column								{flex: 25%;
-									max-width: 25%;
-									padding: 0 4px;}
-
-.column img							{margin-top: 8px;
-									vertical-align: middle;
-									width: 100%;}
-
-table								{margin-left: auto;
-									margin-right: auto;}
-
-th									{padding: 15px;}
-
-img.border							{border-style: solid;
-									border-width: 5px;
-									border-color: #ee3883;}
-									
-.container 							{position: relative;}
-
-.overlay 							{position: absolute;
-									top: 0;
-									bottom: 0;
-									left: 1.7%;
-									right: 0;
-									height: 98%;
-									width: 96%;
-									opacity: 0;
-									transition: .5s ease;
-									background-color: #ee3883;}
-
-.container:hover .overlay 			{opacity: 70%;}
-
-.text								{color: white;
-									font-size: 30px;
-									position: absolute;
-									top: 50%;
-									left: 50%;
-									-webkit-transform: translate(-50%, -50%);
-									-ms-transform: translate(-50%, -50%);
-									transform: translate(-50%, -50%);
-									text-align: center;}
-
-::-webkit-scrollbar 				{width: 20px;
-									background-color: #fbf6f9;}
-
-::-webkit-scrollbar-track			{box-shadow: inset 0 0 5px grey; 
-									border-radius: 10px;}
- 
-::-webkit-scrollbar-thumb			{background: #5bc2cd; 
-									border-radius: 10px;}
-
-::-webkit-scrollbar-thumb:hover		{background: #4fa2ab;}
--->
-</style>
-
-</head> 
-
-<body id="top" style="background-image: url('background1.jpg'); margin-bottom: 60px; text-align: center" onload="startup()">
-	<article width="100%">
-		<section class="dm dmH000000 lmHfbf6f9" style="background-color: #fbf6f9; margin-top: 30px; margin-left: -10px; width: 100vw; padding-right: 2px; padding-top: 0px; padding-bottom: 0px;">
-			<hr style="height:5px; background-color: #ee3883; border: none; width: 100.13%" />
-			<h1><img src="Class Titlehead New.png" width="75%"></h1>
-			<br />
-			<div style="font-size: xx-large">
-				<marquee scrollamount="5" behavior="alternate">
-					<img src="newduck.gif" style=" width: 10%; margin-right: -300px"> 
-				</marquee>
-				<br />
-				<br />
-				<p style="font-size: 18px; color: #5bc2cd; margin-top: 0px">James says:</p>
+	<head>
+		<meta charset="utf-8" />
+		
+		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+		
+		<title> Crazy?</title>
+		
+		<script src="message.js"></script>
+		
+		<script src="darkMode.js"></script>
+		
+		<script src="clock.js"></script>
+		
+		<script>
+			function startup() {
+				getMessage();
+				toggleDarkMode();
+				clock();
+			}
+		</script>
+		
+		<style type="text/css">
+		<!--
+		a 									{text-decoration: none;
+											color: white;}
+		
+		a:hover								{color: #5bc2cd;
+											font-style: italic;
+											text-decoration: underline;}
+		
+		body 								{font-family: 'Roboto';font-size: 20px;
+											background-repeat: no-repeat;
+											background-attachment: fixed;
+											background-size: cover;
+											overflow-x: hidden;}
+		
+		button								{border: 1px;
+											background-color: #ee3883;
+											color: white;
+											padding: 1%;
+											font-size: 100%;
+											width: 100%;}
+		
+		.column								{flex: 25%;
+											max-width: 25%;
+											padding: 0 4px;}
+		
+		.column img							{margin-top: 8px;
+											vertical-align: middle;
+											width: 100%;}
+		
+		.container 							{position: relative;}
+		
+		.container:hover .overlay 			{opacity: 70%;}
+		
+		.dropdown							{display: inline-block;
+											position: relative;}
+		
+		.dropdown-content					{display: none;
+											position: absolute;
+											width: 300%;
+											overflow: auto;
+											box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+											border: none;}
+		
+		.dropdown-content a 				{background-color: #ee3883;
+											text-align: left;
+											display: block;
+											color: #FFFFFF;
+											font-size: 90%;
+											padding: 5px;
+											text-decoration: none;}
+		
+		.dropdown-content a:hover			{color: #5bc2cd;
+											background-color: #ee3883;}
+		
+		.dropdown:hover .dropdown-content	{display: block;}
+		
+		footer 								{text-align: center;
+											background-color: #ee3883;
+											color: white;
+											position: fixed;
+											margin-left: -8.3px;
+											bottom: 0;
+											width: 100%;
+											height: 6%;
+											font-size:small;}
+		
+		img.border							{border-style: solid;
+											border-width: 5px;
+											border-color: #ee3883;}
+		
+		marquee								{padding: 0;}
+		
+		nav 								{border: 1px;
+											background-color: #ee3883;
+											color: white;
+											padding: 1%;
+											font-size: 130%;}
+		
+		.overlay 							{position: absolute;
+											top: 0;
+											bottom: 0;
+											left: 1.7%;
+											right: 0;
+											height: 98%;
+											width: 96%;
+											opacity: 0;
+											transition: .5s ease;
+											background-color: #ee3883;}
+		
+		.row								{display: flex;
+											flex-wrap: wrap;
+											padding: 0 4px;}
+		
+		table								{margin-left: auto;
+											margin-right: auto;}
+		
+		.text								{color: white;
+											font-size: 30px;
+											position: absolute;
+											top: 50%;
+											left: 50%;
+											-webkit-transform: translate(-50%, -50%);
+											-ms-transform: translate(-50%, -50%);
+											transform: translate(-50%, -50%);
+											text-align: center;}
+		
+		th									{padding: 15px;}
+		
+		tr.I								{background-color: pink;}
+		
+		tr.L								{background-color: #ee3883;
+											color: white;}
+		
+		u 									{text-decoration: none;
+											color: white;}
+		
+		u:hover								{color: #5bc2cd;
+											text-decoration: underline;
+											font-style: italic;}
+		
+		::-webkit-scrollbar 				{width: 20px;
+											background-color: #fbf6f9;}
+		
+		::-webkit-scrollbar-thumb			{background: #5bc2cd; 
+											border-radius: 10px;}
+		
+		::-webkit-scrollbar-thumb:hover		{background: #4fa2ab;}
+		
+		::-webkit-scrollbar-track			{box-shadow: inset 0 0 5px grey; 
+											border-radius: 10px;}
+		-->
+		</style>
+	</head> 
 	
-				<div style="color: #5bc2cd; padding-left: 10px; padding-right: 10px" id="hi"></div>
-		
-				<img src="Fixed Heart.png" style="height: 2%; width: 2%;" />
-			</div>
-			<hr style="height:5px; background-color: #ee3883; border: none; width: 100.13%" />
-
-		</section>
-<br />
-
-<br />
-		<section>
-			<nav>
-				<a href="crazytestmerch.html"><u>Shop</u></a>
-				|
-				<a href="https://studentsis.csiu-technology.org/suntech" target="_blank"><u>Gradebook</u></a>
-				|
-				<a href="https://campus.careersafeonline.com/main.k2" target="_blank"><u>CareerSafe</u></a>
-				| 
-				<a href="https://newegg.com" target="_blank"><u>NewEgg</u></a>
-				|
-				<a href="https://www.nitrotype.com/garage" target="_blank"><u>Nitrotype</u></a>
-				|
-				<a href="https://open.spotify.com/" target="_blank"><u>Spotify</u></a>
-				|
-				<div class="dropdown">
-					<button><u>Notes</u></button>
+	<body id="top" style="background-image: url('background1.jpg'); margin-bottom: 60px; text-align: center" onload="startup()">
+		<article width="100%">
+			<section class="dm dmH000000 lmHfbf6f9" style="background-color: #fbf6f9; margin-top: 30px; margin-left: -10px; width: 100vw; padding-right: 2px; padding-top: 0px; padding-bottom: 0px;">
+				<hr style="height:5px; background-color: #ee3883; border: none; width: 100.13%" />
+				
+				<h1><img src="Class Titlehead New.png" width="75%"/></h1>
+				
+				<br />
+				
+				<div style="font-size: xx-large">
+					<marquee scrollamount="5" behavior="alternate">
+						<img src="newduck.gif" style=" width: 10%; margin-right: -300px"/> 
+					</marquee>
 					
-					<div class="dropdown-content">
-						<a href="https://suntechorg-my.sharepoint.com/:w:/g/personal/bvoneida_sun-tech_org/EaKsuHVfCsFEojs_AskSuTABRfcNbiV6B2uzsfjjhRqC9Q" target="_blank"><u>A+ notes</u></a>
-						<a href="https://suntechorg-my.sharepoint.com/:w:/g/personal/bvoneida_sun-tech_org/Ea0DMUii9bpNibXXoe_ExAQB2b8Gn4LBNLgeyIMuNh0u5w" target="_blank"><u>C-Tech Notes</u></a>
-						<a href="https://suntechorg-my.sharepoint.com/:w:/g/personal/bvoneida_sun-tech_org/EY7yv_hN1HdHp1YvtfkHjOcBULbjkPsjmjugfiOYFR4qCA" target="_blank"><u>Network+ Notes</u></a>
-					</div>
+					<br />
+					
+					<br />
+					
+					<p style="font-size: 18px; color: #5bc2cd; margin-top: 0px">James says:</p>
+					
+					<div style="color: #5bc2cd; padding-left: 10px; padding-right: 10px" id="hi"></div>
+					
+					<img src="Fixed Heart.png" style="height: 2%; width: 2%;" />
 				</div>
-			</nav>
-		</section>
-<br />
-		<section>
-		<div style="background-color: #ee3883">
-		<img width="30%" src="Gallery Titlehead.png">
-		</div>
-		
-		<table style="text-align: center">
+				<hr style="height:5px; background-color: #ee3883; border: none; width: 100.13%" />
+			</section>
+			
+			<br />
+			
+			<br />
+			
+			<section>
+				<nav>
+					<a href="crazytestmerch.html"><u>Shop</u></a>
+					|
+					<a href="https://studentsis.csiu-technology.org/suntech" target="_blank"><u>Gradebook</u></a>
+					|
+					<a href="https://campus.careersafeonline.com/main.k2" target="_blank"><u>CareerSafe</u></a>
+					| 
+					<a href="https://newegg.com" target="_blank"><u>NewEgg</u></a>
+					|
+					<a href="https://www.nitrotype.com/garage" target="_blank"><u>Nitrotype</u></a>
+					|
+					<a href="https://open.spotify.com/" target="_blank"><u>Spotify</u></a>
+					|
+					<div class="dropdown">
+						<button><u>Notes</u></button>
+						
+						<div class="dropdown-content">
+							<a href="https://suntechorg-my.sharepoint.com/:w:/g/personal/bvoneida_sun-tech_org/EaKsuHVfCsFEojs_AskSuTABRfcNbiV6B2uzsfjjhRqC9Q" target="_blank"><u>A+ notes</u></a>
+							
+							<a href="https://suntechorg-my.sharepoint.com/:w:/g/personal/bvoneida_sun-tech_org/Ea0DMUii9bpNibXXoe_ExAQB2b8Gn4LBNLgeyIMuNh0u5w" target="_blank"><u>C-Tech Notes</u></a>
+							
+							<a href="https://suntechorg-my.sharepoint.com/:w:/g/personal/bvoneida_sun-tech_org/EY7yv_hN1HdHp1YvtfkHjOcBULbjkPsjmjugfiOYFR4qCA" target="_blank"><u>Network+ Notes</u></a>
+						</div>
+					</div>
+				</nav>
+			</section>
+			
+			<br />
+			
+			<section>
+				<div style="background-color: #ee3883">
+					<img width="30%" src="Gallery Titlehead.png"/>
+				</div>
+				
+				<table style="text-align: center">
+					<tr>
+						<th>
+							<img class="border" width="70%" src="cntpic1.jpg"/>
+						</th>
+					</tr>
+				</table>
+				
+				<div style="background-color: #ee3883">
+					<img width="30%" src="Meet the Founders Titlehead.png"/>
+				</div>
+				
+				<br />
+				
+				<table>
+					<tr>
+						<td>
+							<div class="container">
+								<img src="cntpic3.jpg" width="95%" class="border"/>
+								<div class="overlay">
+									<div class="text">Justus</div>
+								</div>
+							</div>
+						</td>
+						
+						<td>
+							<div class="container">
+								<img src="cntpic4.jpg" width="95%" class="border"/>
+								<div class="overlay">
+									<div class="text">Nickolai</div>
+								</div>
+							</div>
+						</td>
+						
+						<td>
+							<div class="container">
+								<img src="cntpic5.jpg" width="95%" class="border"/>
+								<div class="overlay">
+									<div class="text">Jett</div>
+								</div>
+							</div>
+						</td>
+					</tr>
+				</table>	
+			</section>
+		</article>
+	</body>
+	
+	<br />
+	
+	<footer>
+		<table style="font-size: 90%;" width="100%" >
 			<tr>
-			<th>
-				<img class="border" width="70%" src="cntpic1.jpg"/>
-			</th>
+				<td width="500px" style="text-align: left; padding-left: .5vw;"><p style="font-size: .9vw">Have Suggestions? Send us an E-mail at <a href="mailto:nwetzel@sun-tech.org">nwetzel@sun-tech.org</a> or <a href="mailto:jashburn@sun-tech.org" />jashburn@sun-tech.org</a></p></td>
+				
+				<td width="20%"><marquee scrollamount="3" behavior="alternate">
+						<img src="newduck.gif" style="margin right: 0px; width: 10%; margin-right: -450px"></marquee></td>
+	
+				<td width="500px" style="text-align: right; padding-right: .5vw"><p style="font-size: .9vw">Disclaimer: The content on this web page does not represent Sun Area Technical Institute.</p></td>	
 			</tr>
 		</table>
-
-		<div style="background-color: #ee3883">
-		<img width="30%" src="Meet the Founders Titlehead.png">
-		</div>
-
-<br />
-
-		<table>
-			<tr>
-				<td>
-				<div class="container">
-					<img src="cntpic3.jpg" width="95%" class="border"/>
-					<div class="overlay">
-					<div class="text">Justus</div>
-					</div>
-				</div>
-				</td>
-				
-				<td>
-					<div class="container">
-					<img src="cntpic4.jpg" width="95%" class="border"/>
-					<div class="overlay">
-					<div class="text">Nickolai</div>
-					</div>
-					</div>
-				</td>
-				
-				<td>
-					<div class="container">
-					<img src="cntpic5.jpg" width="95%" class="border"/>
-					<div class="overlay">
-					<div class="text">Jett</div>
-					</div>
-					</div>
-				</td>
-			</tr>
-		</table>	
-			
-		</section>
-	
-	</article>
-</body>
-<br />
-<footer>
-	<table style="font-size: 90%;" width="100%" >
-		<tr>
-			<td width="500px" style="text-align: left; padding-left: .5vw;"><p style="font-size: .9vw">Have Suggestions? Send us an E-mail at <a href="mailto:nwetzel@sun-tech.org">nwetzel@sun-tech.org</a> or <a href="mailto:jashburn@sun-tech.org" />jashburn@sun-tech.org</a></p></td>
-			
-			<td width="20%"><marquee scrollamount="3" behavior="alternate">
-					<img src="newduck.gif" style="margin right: 0px; width: 10%; margin-right: -450px"></marquee></td>
-
-			<td width="500px" style="text-align: right; padding-right: .5vw"><p style="font-size: .9vw">Disclaimer: The content on this web page does not represent Sun Area Technical Institute.</p></td>	
-		</tr>
-	</table>
-</footer>
+	</footer>
 </html>
