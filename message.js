@@ -5,14 +5,7 @@ function getMessage() {
 };
 
 const messages = [
-	"Check your closet before you sleep tonight.",
-	"Youre not supposed to be here.",
-	"Open the door, its cold in here.",
-	"Your bones need to breathe, take them out.",
-	"Help me...",
-	"Its cold down here.",
 	"...",
-	"The bugs, they're in your skin.",
 	"Crazy? I was crazy once. They locked me in a room. A rubber room. A rubber room with rats. And rats make me crazy. Crazy?",
 	"We've been trying to contact you reguarding your cars extended warranty.",
 	"Quack!",
