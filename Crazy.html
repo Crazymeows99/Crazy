@@ -12,6 +12,8 @@
 		
 		<link rel="icon" type="image/x-icon" href="duck.png">
 		
+		<Link rel="stylesheet" href="CrazyStyles.css">
+		
 		<title> Crazy?</title>
 		
 		<script src="message.js"></script>
@@ -27,204 +29,6 @@
 				clock();
 			}
 		</script>
-		
-		<style type="text/css">
-		<!--
-		body 								{font-family: 'Roboto';font-size: 20px;
-											background-repeat: no-repeat;
-											background-attachment: fixed;
-											background-size: cover;
-											overflow-x: hidden;}
-		
-		::-webkit-scrollbar 				{width: 20px;}
-		
-		::-webkit-scrollbar-thumb			{background: #5bc2cd; 
-											border-radius: 10px;
-											border: 2px solid;
-											border-color: #ee3883;}
-		
-		::-webkit-scrollbar-thumb:hover		{background: #4fa2ab;}
-		
-		::-webkit-scrollbar-track			{box-shadow: inset 0 0 5px grey; 
-											border-radius: 10px;}
-		
-		nav									{border: 1px;
-											background-color: #ee3883;
-											color: white;
-											padding: 1%;
-											font-size: 150%;
-											height: 1.5vw;
-											display: block;}
-		
-		nav ul								{margin-top: -.4%}
-		
-		nav ul li							{display: inline-block;
-											list-style: none;
-											font-size: 1em;
-											padding: 0 20px 0 0;
-											margin: 0 20px 0 0;
-											cursor: pointer;
-											position: relative;}
-		
-		nav ul li:after						{content: '';
-											width: 0;
-											height: 5px;
-											background: #5bc2cd;
-											position: absolute;
-											left: 0;
-											bottom: -10px;
-											transition: 0.5s;}
-		
-		nav ul li:hover::after				{width:100%;}	
-		
-		u 									{text-decoration: none;
-											color: white;}
-		
-		a 									{text-decoration: none;
-											color: white;}
-		
-		u:hover								{text-decoration: none;
-											font-style: none;}
-		
-		.dropdown							{display: inline-block;
-											position: relative;}
-		
-		.dropdown-content					{display: none;
-											position: absolute;
-											width: 300%;
-											overflow: auto;
-											box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
-											border: none;}
-		
-		.dropdown-content a 				{background-color: #ee3883;
-											text-align: left;
-											display: block;
-											color: #FFFFFF;
-											font-size: 90%;
-											padding: 5px;
-											text-decoration: none;}
-		
-		.dropdown-content a:hover			{color: #5bc2cd;
-											background-color: #ee3883;}
-		
-		.dropdown:hover .dropdown-content	{display: block;}
-		
-		button								{border: 1px;
-											background-color: #ee3883;
-											color: white;
-											padding: 1%;
-											font-size: 100%;
-											width: 100%;}
-		
-		.button								{background-color: #ee3883;
-										border: none;
-										color: black;
-										padding: 16px 32px;
-										text-align: center;
-										font-size: 16px;
-										margin: 4px 2px;
-										transition: 0.3s;}
-		
-		.button								{border-radius: 4px;
-											background-color: #ee3883;
-											border: none;
-											color: #FFFFFF;
-											text-align: center;
-											font-size: 28px;
-											padding: 20px;
-											width: 200px;
-											transition: all 0.5s;
-											cursor: pointer;
-											margin: 5px;}
-		
-		.button:hover						{background-color: #5bc5cd;
-											color: white;}
-		
-		.button:hover span					{padding-right: 25px;}
-		
-		.button:hover span:after			{opacity: 1;
-											right: 0;}
-		
-		.button span						{display: inline-block;
-											position: relative;
-											transition: 0.5s;}
-		
-		.button span:after					{content: '\00bb';
-											position: absolute;
-											opacity: 0;
-											top: 0;
-											right: -20px;
-											transition: 0.5s;}
-		
-		.a 									{text-decoration: none;
-											color: white;}
-		
-		.a:hover							{text-decoration: underline;}
-		
-		.column								{flex: 25%;
-											max-width: 25%;
-											padding: 0 4px;}
-		
-		.column img							{margin-top: 8px;
-											vertical-align: middle;
-											width: 100%;}
-		
-		.container 							{position: relative;}
-		
-		.container:hover .overlay 			{opacity: 70%;}
-		
-		img.border							{border-style: solid;
-											border-width: 5px;
-											border-color: #ee3883;}
-		
-		marquee								{padding: 0;}
-		
-		.overlay 							{position: absolute;
-											top: 0;
-											bottom: 0;
-											left: 1.7%;
-											right: 0;
-											height: 98%;
-											width: 96%;
-											opacity: 0;
-											transition: .5s ease;
-											background-color: #ee3883;}
-		
-		.row								{display: flex;
-											flex-wrap: wrap;
-											padding: 0 4px;}
-		
-		table								{margin-left: auto;
-											margin-right: auto;}
-		
-		.text								{color: white;
-											font-size: 30px;
-											position: absolute;
-											top: 50%;
-											left: 50%;
-											-webkit-transform: translate(-50%, -50%);
-											-ms-transform: translate(-50%, -50%);
-											transform: translate(-50%, -50%);
-											text-align: center;}
-		
-		th									{padding: 15px;}
-		
-		tr.I								{background-color: pink;}
-		
-		tr.L								{background-color: #ee3883;
-											color: white;}
-		
-		footer 								{text-align: center;
-											background-color: #ee3883;
-											color: white;
-											position: fixed;
-											margin-left: -8.3px;
-											bottom: 0;
-											width: 100%;
-											height: 6%;
-											font-size:small;}
-		-->
-		</style>
 	</head> 
 	
 	<body id="top" style="background-image: url('background1.jpg'); margin-bottom: 60px; text-align: center" onload="startup()">
@@ -267,9 +71,11 @@
 						
 						<li><a href="https://campus.careersafeonline.com/main.k2" target="_blank"><u>CareerSafe</u></a></li>
 						
+						<li><a href="https://labsimapp.testout.com/v6_0_583/index.html" target="_blank"><u>TestOut</u></a></li>
+						
 						<li><a href="https://open.spotify.com/" target="_blank"><u>Spotify</u></a></li>
 						
-						<div style="padding: 0 20px 0 0; margin: -20px 20px 0 0" class="dropdown">
+						<div style="padding: 0 20px 0 0; margin: -20px 20px 0 0; font-size: 120%" class="dropdown">
 							<button><u>Notes</u></button>
 							
 							<div class="dropdown-content">
