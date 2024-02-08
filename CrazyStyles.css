@@ -1,4 +1,4 @@
-body 								{font-family: 'Roboto';font-size: 20px;
+body 								{font-family: 'Roboto';
 									background-repeat: no-repeat;
 									background-attachment: fixed;
 									background-size: cover;
@@ -20,7 +20,7 @@ nav									{border: 1px;
 									background-color: #ee3883;
 									color: white;
 									padding: 1%;
-									font-size: 120%;
+									font-size: 1.6vw;
 									height: 1.5vw;
 									display: block;}
 
@@ -28,7 +28,6 @@ nav ul								{margin-top: -.4%}
 
 nav ul li							{display: inline-block;
 									list-style: none;
-									font-size: 120%;
 									padding: 0 20px 0 0;
 									margin: 0 20px 0 0;
 									cursor: pointer;
@@ -85,13 +84,13 @@ button								{border: 1px;
 									width: 100%;}
 
 .button								{background-color: #ee3883;
-								border: none;
-								color: black;
-								padding: 16px 32px;
-								text-align: center;
-								font-size: 16px;
-								margin: 4px 2px;
-								transition: 0.3s;}
+									border: none;
+									color: black;
+									padding: 16px 32px;
+									text-align: center;
+									font-size: 16px;
+									margin: 4px 2px;
+									transition: 0.3s;}
 
 .button								{border-radius: 4px;
 									background-color: #ee3883;
