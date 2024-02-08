@@ -42,7 +42,8 @@ nav ul li:after						{content: '';
 									bottom: -10px;
 									transition: 0.5s;}
 
-nav ul li:hover::after				{width:100%;}	
+nav ul li:hover::after				{width:100%;
+						cursor: url('cursor.png'), auto;}	
 
 u 									{text-decoration: none;
 									color: white;}
@@ -50,8 +51,8 @@ u 									{text-decoration: none;
 a 									{text-decoration: none;
 									color: white;}
 
-u:hover									{color: #5bc2cd;
-									cursor: url('cursor.png'), auto;}
+u:hover								{text-decoration: none;
+									font-style: none;}
 
 .dropdown							{display: inline-block;
 									position: relative;}
