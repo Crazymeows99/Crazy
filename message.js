@@ -51,5 +51,8 @@ const messages = [
 	"For all the whining everyone’s always doing about jetpacks and other tech of the future, you’d think we’d be more impressed with the teeming abundance and affordability of lasers. In fact, we’re so over Light Amplification by Stimulated Emission of Radiation, we’ve relegated the technology to kitschy beach-shop key chains and board games for nerds. And yet a new study shows a majority of the dinky laser pointers on the market exceed the power level limits set by the Code of Federal Regulations, which means a whole lot of twerps out there wield far more retina-burning power than they should.",
 	"Doom Eternal is a very fun, christian based game that takes you through the adventure of a messiah that seeks out to defeat the evil in the world, it teaches valuable lessons on the importance of following Jesus and eradicating evil in the world.",
 	"Take a screensot, it will last longer.",
+	"hay is for horses.",
+	"what did the fish say when he ran into the wall? dam.",
+	"he did what???",
 ]
 
