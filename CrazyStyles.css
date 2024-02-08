@@ -43,7 +43,7 @@ nav ul li:after						{content: '';
 									transition: 0.5s;}
 
 nav ul li:hover::after				{width:100%;
-						cursor: url('cursor.png'), auto;}	
+						cursor: url('pics/cursor.png'), auto;}	
 
 u 									{text-decoration: none;
 									color: white;}
