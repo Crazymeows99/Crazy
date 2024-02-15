@@ -44,7 +44,7 @@ nav ul li:after								{content: '';
 
 nav ul li:hover::after							{width:100%;}
 
-u:hover									{cursor: url('pics/cursor.png'), auto;}
+u:hover									{cursor: url('pics/cursor(1).cur'), auto;}
 
 u 									{text-decoration: none;
 									color: white;}
