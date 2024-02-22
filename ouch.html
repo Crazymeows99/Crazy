@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
+<script>
+function startTimer() {
+	setTimeout(backToHome, 10000);
+}
+function backToHome() {
+	window.location.replace("https://crazymeows99.github.io/Crazy/Crazy.html");
+}
+</script>
 <style> 
 <!--
 body{
@@ -34,7 +42,7 @@ div {
 -->
 </style>
 </head>
-<body>
+<body onload="startTimer()">
 
 <h1 class="fade-in-text" style="text-align: center">Dont Touch Me</h1>
 
