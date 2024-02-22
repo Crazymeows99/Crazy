@@ -54,5 +54,6 @@ const messages = [
 	"hay is for horses.",
 	"what did the fish say when he ran into the wall? dam.",
 	"he did what???",
+	"dame tu salsa de hombre",
 ]
 
