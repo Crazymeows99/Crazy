@@ -55,5 +55,6 @@ const messages = [
 	"what did the fish say when he ran into the wall? dam.",
 	"he did what???",
 	"dame tu salsa de hombre",
+	"Womp Womp",
 ]
 
