@@ -56,5 +56,7 @@ const messages = [
 	"he did what???",
 	"dame tu salsa de hombre",
 	"Womp Womp",
+	"Wabungus",
+	"ERROR CODE: ID10T",
 ]
 
