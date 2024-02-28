@@ -58,5 +58,6 @@ const messages = [
 	"Womp Womp",
 	"Wabungus",
 	"ERROR CODE: ID10T",
+	"Valorant is so doggy doo doo",
 ]
 
