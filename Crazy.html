@@ -17,26 +17,15 @@
 		<title>Crazy?</title>
 		
 		<script src="message.js"></script>
-		
-		<script src="darkMode.js"></script>
-		
-		<script src="clock.js"></script>
-		
-		<script>
-			function startup() {
-				getMessage();
-				toggleDarkMode();
-				clock();
-			}
-		</script>
+		<script src="darkmode.js"></script>
 	</head> 
 	
-	<body id="top" style="background-image: url('pics/background1.jpg'); margin-bottom: 60px; text-align: center" onload="startup()">
+	<body id="top" style="margin-bottom: 60px; text-align: center" onload="startup()">
 		<article width="100%">
-			<section class="dm dmH000000 lmHfbf6f9" style="background-color: #fbf6f9; margin-top: 30px; margin-left: -10px; width: 100vw; padding-right: 2px; padding-top: 0px; padding-bottom: 0px;">
-				<hr style="height:5px; background-color: #ee3883; border: none; width: 100.13%" />
+			<section id="JamesBox" style="background-color: #fbf6f9; margin-top: 30px; margin-left: -50px; width: 100vw; padding-right: 2px; padding-top: 0px; padding-bottom: 0px;">
+				<hr id="purplebox" style="height:5px; border: none; width: 100.13%" />
 				
-				<h1><img src="pics/Class Titlehead New.png" width="75%"/></h1>
+				<h1><img id="ClTh" src="pics/Class Titlehead New.png" width="75%"/></h1>
 				
 				<br />
 				
@@ -51,13 +40,13 @@
 					
 					<br />
 					
-					<p style="font-size: 18px; color: #5bc2cd; margin-top: 0px">James says:</p>
+					<p id="jamessays" class="jamessays">James says:</p>
 					
-					<div style="color: #5bc2cd; padding-left: 10px; padding-right: 30px" id="hi"></div>
+					<div class="jamessays1" id="hi"></div>
 					
-					<img src="pics/Fixed Heart.png" style="height: 2%; width: 2%;" />
+					<img id="H" src="pics/Fixed Heart.png" style="height: 2%; width: 2%;" />
 				</div>
-				<hr style="height:5px; background-color: #ee3883; border: none; width: 100.13%" />
+				<hr id="purplebox2" style="height:5px; border: none; width: 100.13%" />
 			</section>
 			
 			<br />
@@ -65,8 +54,9 @@
 			<br />
 			
 			<section>
-				<nav>
+				<nav id="purplebox3">
 					<ul>
+						
 						<li><a href="crazytestmerch.html"><u>Shop</u></a></li>
 						
 						<li><a href="https://studentsis.csiu-technology.org/suntech" target="_blank"><u>Gradebook</u></a></li>
@@ -78,7 +68,7 @@
 						<li><a href="https://open.spotify.com/" target="_blank"><u>Spotify</u></a></li>
 						
 						<div style="padding: 0 20px 0 0; margin: -20px 20px 0 0" class="dropdown">
-							<button><u>Notes</u></button>
+							<button id="purplebutton"><u>Notes</u></button>
 							
 							<div class="dropdown-content">
 								<a href="https://suntechorg-my.sharepoint.com/:w:/g/personal/creed_sun-tech_org/EZRLjKuHYxZDi2W2Ivp7SCsBL5KPA9ja3oacy2N_8pDFrw?e=ixYaGU" target="_blank"><u>C-Tech Notes</u></a>
@@ -88,6 +78,14 @@
 								<a href="https://suntechorg-my.sharepoint.com/:f:/g/personal/jstiefel_sun-tech_org/EvVRyy0vC0RFltF1PZ_hToMBVCqNwFk21wFixn1jajoUiA?e=rgt6fh" target="_blank"><u>Justus's notes</u></a>
 							</div>
 						</div>
+						
+						<div style="padding: 0 20px 0 0; margin: -20px 20px 0 0" class="dropdown">
+							<button id="purplebutton1"><u>Settings</u></button>
+							
+							<div class="dropdown-content">
+								<button onclick="myFunction()">Toggle dark mode</button>
+							</div>
+						</div>
 					</ul>
 				</nav>
 			</section>
@@ -95,14 +93,14 @@
 			<br />
 			
 			<section>
-				<div style="background-color: #ee3883">
-					<img width="30%" src="pics/Gallery Titlehead.png"/>
+				<div id="purplebox4" class="purpletitleheadbg">
+					<img id="GalTh" width="30%" src="pics/Gallery Titlehead.png"/>
 				</div>
 				
 				<table style="text-align: center">
 					<tr>
 						<th>
-							<img class="border" width="70%" src="pics/cntpic6.jpg"/>
+							<img id="purpleborder" class="border" width="70%" src="pics/cntpic6.jpg"/>
 						</th>
 					</tr>
 				</table>
@@ -110,15 +108,15 @@
 				<table style="margin-bottom: 10px">
 					<tr>
 						<td>
-							<img src="pics/cntpic7.jpg" width="95%" class="border"/>
+							<img id="purpleborder1" src="pics/cntpic7.jpg" width="95%" class="border"/>
 						</td>
 						
 						<td>
-							<img src="pics/cntpic8.jpg" width="95%" class="border"/>
+							<img id="purpleborder2" src="pics/cntpic8.jpg" width="95%" class="border"/>
 						</td>
 						
 						<td>
-							<img src="pics/cntpic9.jpg" width="95%" class="border"/>
+							<img id="purpleborder3" src="pics/cntpic9.jpg" width="95%" class="border"/>
 						</td>
 					</tr>
 				</table>
@@ -126,15 +124,15 @@
 				<table style="margin-bottom: 10px">
 					<tr>
 						<td>
-							<img src="pics/cntpic10.jpg" width="95%" class="border"/>
+							<img id="purpleborder4" src="pics/cntpic10.jpg" width="95%" class="border"/>
 						</td>
 						
 						<td>
-							<img src="pics/cntpic11.jpg" width="95%" class="border"/>
+							<img id="purpleborder5" src="pics/cntpic11.jpg" width="95%" class="border"/>
 						</td>
 						
 						<td>
-							<img src="pics/cntpic13.jpg" width="95%" class="border"/>
+							<img id="purpleborder6" src="pics/cntpic13.jpg" width="95%" class="border"/>
 						</td>
 					</tr>
 				</table>
@@ -142,21 +140,21 @@
 				<table style="margin-bottom: 20px">
 					<tr>
 						<td>
-							<img src="pics/Hampter.png" width="95%" class="border"/>
+							<img id="purpleborder7" src="pics/Hampter.png" width="95%" class="border"/>
 						</td>
 						
 						<td>
-							<img src="pics/wabungus.png" width="95%" class="border"/>
+							<img id="purpleborder8" src="pics/wabungus.png" width="95%" class="border"/>
 						</td>
 						
 						<td>
-							<img src="pics/cntpic14.jpg" width="95%" class="border"/>
+							<img id="purpleborder9" src="pics/cntpic14.jpg" width="95%" class="border"/>
 						</td>
 					</tr>
 				</table>
 				
-				<div style="background-color: #ee3883">
-					<img width="30%" src="pics/Meet the Founders Titlehead.png"/>
+				<div id="purplebox5" class="purpletitleheadbg">
+					<img id="MTFTh" width="30%" src="pics/Meet the Founders Titlehead.png"/>
 				</div>
 				
 				<br />
@@ -165,7 +163,7 @@
 					<tr>
 						<td>
 							<div class="container">
-								<img src="pics/cntpic3.jpg" width="95%" class="border"/>
+								<img id="purpleborder10" src="pics/cntpic3.jpg" width="95%" class="border"/>
 								<div class="overlay">
 									<div class="text">Justus</div>
 								</div>
@@ -174,7 +172,7 @@
 						
 						<td>
 							<div class="container">
-								<img src="pics/cntpic4.jpg" width="95%" class="border"/>
+								<img id="purpleborder11" src="pics/cntpic4.jpg" width="95%" class="border"/>
 								<div class="overlay">
 									<div class="text">Nickolai</div>
 								</div>
@@ -183,7 +181,7 @@
 						
 						<td>
 							<div class="container">
-								<img src="pics/cntpic12.jpg" width="95%" class="border"/>
+								<img id="purpleborder12" src="pics/cntpic12.jpg" width="95%" class="border"/>
 								<div class="overlay">
 									<div class="text">Jett</div>
 								</div>
@@ -197,7 +195,7 @@
 	
 	<br />
 	
-	<footer>
+	<footer  id="purplebox6">
 		<table style="font-size: 90%;" width="100%" >
 			<tr>
 				<td width="500px" style="text-align: left; padding-left: .5vw;"><p style="font-size: .9vw">Have Suggestions? Send us an E-mail at <a href="mailto:nwetzel@sun-tech.org" class="a">nwetzel@sun-tech.org</a> or <a href="mailto:jashburn@sun-tech.org" class="a"/>jashburn@sun-tech.org</a></p></td>
