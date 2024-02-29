@@ -1,13 +1,33 @@
-var darkmode = false;
+var darkmode;
+
 function startup() {
+	searchLocal();
 	getMessage();
 }
 
-function myFunction() {
-	if (darkmode) {
+function searchLocalO() {
+ 	// Darkmode Toggle
+	darkmode = localStorage.getItem("darkmode");
+	if (darkmode == null) {
 		darkmode = false;
-	} else {
-		darkmode = true;
+		localStorage.setItem("darkmode", false);
+	}
+	if (darkmode) {
+		myFunction(doToggle=false);
+	}
+}
+
+function myFunction(let doToggle=true) {
+	// Toggle
+	if (doToggle) {
+		if (darkmode) {
+			darkmode = false;
+			localStorage.setItem("darkmode", false);
+		} 
+		else {
+			darkmode = true;
+			localStorage.setItem("darkmode", true);
+		}
 	}
 
 	var element = document.body;
