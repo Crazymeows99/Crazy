@@ -10,3 +10,9 @@ Eggshell color is #fbf6f9
 
 The ducks name is James.
 
+Dark Mode: 
+
+Purple color is #af73d8
+
+Blue color is #54a0ff
+
