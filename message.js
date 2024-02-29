@@ -58,7 +58,7 @@ const messages = [
 	"Womp Womp",
 	"Wabungus",
 	"ERROR CODE: ID10T",
-	"Valorant is so doggy doo doo (Just because youre bad at a game doesnt mean its bad, Jett.)",
+	"Valorant is so doggy doo doo (Just because youre bad at a game doesnt mean the game is bad, Jett.)",
 	"'youre the clap king jett' -brighton",
 ]
 
