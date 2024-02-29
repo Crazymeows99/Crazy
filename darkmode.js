@@ -17,7 +17,7 @@ function searchLocalO() {
 	}
 }
 
-function myFunction(let doToggle=true) {
+function myFunction(doToggle=true) {
 	// Toggle
 	if (doToggle) {
 		if (darkmode) {
