@@ -5,7 +5,7 @@ function startup() {
 	getMessage();
 }
 
-function searchLocalO() {
+function searchLocal() {
  	// Darkmode Toggle
 	darkmode = localStorage.getItem("darkmode");
 	if (darkmode == null) {
