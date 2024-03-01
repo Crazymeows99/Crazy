@@ -8,11 +8,18 @@ function startup() {
 function searchLocal() {
  	// Darkmode Toggle
 	darkmode = localStorage.getItem("darkmode");
-	if (darkmode == null) {
+	if (darkmode == "true") {
+		darkmode = true;
+	}
+	else if (darkmode == "false") {
+		darkmode = false;
+	}
+	else {
 		darkmode = false;
 		localStorage.setItem("darkmode", false);
 	}
 	if (darkmode) {
+		console.log("hello");
 		myFunction(doToggle=false);
 	}
 }
