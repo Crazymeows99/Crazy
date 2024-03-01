@@ -10,9 +10,30 @@ const dmElements = {
 const dmElements = {
 	"#JamesBox": "dark-mode1",
 	"#purplebox": "dark-mode2",
-	
-	
-	".border": "dark-mode3",
+	"#purplebox2": "dark-mode2",
+	"#purplebox3": "dark-mode2",
+	"#purplebox4": "dark-mode2",
+	"#purplebox5": "dark-mode2",
+	"#purplebox6": "dark-mode2",
+	"#purplebutton": "dark-mode2",
+	"#purplebutton1": "dark-mode2",
+	"#purpleborder": "dark-mode3",
+	"#purpleborder1": "dark-mode3",
+	"#purpleborder2": "dark-mode3",
+	"#purpleborder3": "dark-mode3",
+	"#purpleborder4": "dark-mode3",
+	"#purpleborder5": "dark-mode3",
+	"#purpleborder6": "dark-mode3",
+	"#purpleborder7": "dark-mode3",
+	"#purpleborder8": "dark-mode3",
+	"#purpleborder9": "dark-mode3",
+	"#purpleborder10": "dark-mode3",
+	"#purpleborder11": "dark-mode3",
+	"#purpleborder12": "dark-mode3",
+	"#jamessays": "dark-mode4",
+	"#hi": "dark-mode4",
+	".dropdown-content a": "dark-mode2",
+	".dropdown-content a:hover": "dark-mode2",
 }
 
 
@@ -20,76 +41,6 @@ const dmElements = {
 
 /* To Convert:
 
-	
-	element = document.getElementById("purplebox");						--- done
-	element.classList.toggle("dark-mode2");
-	
-	element = document.getElementById("purplebox2");					--- done
-	element.classList.toggle("dark-mode2");
-	
-	element = document.getElementById("purplebox3");
-	element.classList.toggle("dark-mode2");
-	
-	element = document.getElementById("purplebox4");
-	element.classList.toggle("dark-mode2");
-	
-	element = document.getElementById("purplebox5");
-	element.classList.toggle("dark-mode2");
-	
-	element = document.getElementById("purplebox6");
-	element.classList.toggle("dark-mode2");
-	
-	element = document.getElementById("purplebutton");
-	element.classList.toggle("dark-mode2");
-	
-	element = document.getElementById("purplebutton1");
-	element.classList.toggle("dark-mode2");
-	
-	element = document.getElementById("purpleborder");
-	element.classList.toggle("dark-mode3");
-	
-	element = document.getElementById("purpleborder1");
-	element.classList.toggle("dark-mode3");
-	
-	element = document.getElementById("purpleborder2");
-	element.classList.toggle("dark-mode3");
-	
-	element = document.getElementById("purpleborder3");
-	element.classList.toggle("dark-mode3");
-	
-	element = document.getElementById("purpleborder4");
-	element.classList.toggle("dark-mode3");
-	
-	element = document.getElementById("purpleborder5");
-	element.classList.toggle("dark-mode3");
-	
-	element = document.getElementById("purpleborder6");
-	element.classList.toggle("dark-mode3");
-	
-	element = document.getElementById("purpleborder7");
-	element.classList.toggle("dark-mode3");
-	
-	element = document.getElementById("purpleborder8");
-	element.classList.toggle("dark-mode3");
-	
-	element = document.getElementById("purpleborder9");
-	element.classList.toggle("dark-mode3");
-	
-	element = document.getElementById("purpleborder10");
-	element.classList.toggle("dark-mode3");
-	
-	element = document.getElementById("purpleborder11");
-	element.classList.toggle("dark-mode3");
-	
-	element = document.getElementById("purpleborder12");
-	element.classList.toggle("dark-mode3");
-	
-	element = document.getElementById("jamessays");
-	element.classList.toggle("dark-mode4");
-	
-	element = document.getElementById("hi");
-	element.classList.toggle("dark-mode4");
-	
 	element = document.getElementById('ClTh');
 	if (darkmode) {
 		element.src='pics/ClThDm.png';
@@ -120,23 +71,7 @@ const dmElements = {
 	}
 	
 	
-	const element1 = document.getElementByClassName("border");				---- done
+	const element1 = document.getElementByClassName("border");
 	element.classList.toggle("dark-mode3");
-	
-	element1 = document.getElementByClassName("dropdown");
-	element.classList.toggle("dark-mode2");
-	
-	element1 = document.getElementByClassName("dropdown-content");
-	element.classList.toggle("dark-mode2");
-	
-	element1 = document.getElementByClassName("dropdown-content a");
-	element.classList.toggle("dark-mode2");
-	
-	element1 = document.getElementByClassName("dropdown-content a:hover");
-	element.classList.toggle("dark-mode2");
-	
-	element1 = document.getElementByClassName("dropdown:hover .dropdown-content");
-	element.classList.toggle("dark-mode2");
-	
 */
 
