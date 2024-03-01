@@ -32,6 +32,8 @@ const dmElements = {
 	"#purpleborder12": "dark-mode3",
 	"#jamessays": "dark-mode4",
 	"#hi": "dark-mode4",
+	".::-webkit-scrollbar-thumb": "dark-mode5",
+	".::-webkit-scrollbar-thumb:hover": "dark-mode6",
 	".dropdown-content a": "dark-mode2",
 	".dropdown-content a:hover": "dark-mode2",
 }
