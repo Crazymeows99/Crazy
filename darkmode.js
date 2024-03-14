@@ -29,7 +29,7 @@ function searchLocal() {
 //---------------------------------------
 
 // Used inside of ToggleClasses
-function toggleFromClass(selector, toClass) {
+function toggleFromSelector(selector, toClass) {
 	const items = document.querySelectorAll("."+selector); 
 	for (let item in items) {
 		item = items[item];
@@ -40,24 +40,32 @@ function toggleFromClass(selector, toClass) {
 	}
 }
 
+group = {
+	"a": "dm",
+	".b c": "dm",
+	"#d": "dm",
+}
+
 // Used in conjunction with dmClasses array (as arg)
 function toggleClasses(group) {
 	for (var selector in group) {
-		// ID
-		if (selector[0] == "#") {
-			selector = selector.substring(1);
-			var itemElem = document.getElementById(selector);
-			itemElem.classList.toggle(group["#"+selector]);
-		}
-		// Class
-		else if (selector[0] == ".") {
-			selector = selector.substring(1);
-			toggleFromClass(selector, group["."+selector]);
-		}
-		// Error Logger
-		else {
-			console.log("Err:");
+		// Get all elements that match selector
+		const items = document.querySelectorAll(selector);      // look into doc more
+		if (items.length == 0) {
+			console.log("Selector couldn't find anything for:");
 			console.log(selector);
+			console.log("");
+			alert("Warning: Selector in dmElements.js couldn't find anything for the following:\n" + selector);
+			continue
+		}
+		// Loop through elements
+		for (let item in items) {
+			item = items[item];
+			if (typeof item != "object") {
+				continue;
+			}
+			// Toggle class
+			item.classList.toggle(group[selector]);
 		}
 	}
 }
@@ -76,8 +84,6 @@ function myFunction(doToggle=true) {
 		}
 	}
 
-	// Misc Darkmode
-	document.body.classList.toggle("dark-mode");
 	// Darmode Function
 	toggleClasses(dmElements);
 }
