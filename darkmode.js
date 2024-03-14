@@ -28,7 +28,10 @@ function searchLocal() {
 
 function checkAdmin() {
 	admin = localStorage.getItem("admin");
-	if (admin == "true") {
+	if (admin == null) {
+		admin = false;
+	}
+	else if (admin == "true") {
 		admin = true;
 	}
 	else {
