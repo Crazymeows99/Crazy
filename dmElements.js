@@ -41,9 +41,32 @@ const dmElements = {
 
 
 /*
+//-------------------------------------------------------------------------------------------------------------------
+// Notable Changelog
+
+
 Made: ".dropdown-content a": "dark-mode2",      --into-->    ".dropdown-content a": "dark-mode2-hover",
 and deleted ".dropdown-content a:hover": "dark-mode2",
+
+
+
+//-------------------------------------------------------------------------------------------------------------------
+// Warnings and Notes
+
+Warning: Cannot include : in dmElements array. 
+
+Fix: For hover elements, make a seperate css tag in CrazyStles.css for that element to seperate it from non-hover elements. 
+	> Ex: If using .dark-mode2, can copy it all and change it to .dark-mode2-hover
+     Then make a :hover tag to specify what it should do when hovered over. 
+        > Ex: .dark-mode2-hover:hover
+     In dmElements.js, add the selector and new tag
+        > Ex: ".dropdown-content a": "dark-mode2-hover",
+
+
+
+
 */
+//-------------------------------------------------------------------------------------------------------------------
 
 
 
