@@ -1,9 +1,11 @@
 var darkmode;
+var admin;
 
 // Startup
 function startup() {
 	searchLocal();
 	getMessage();
+	checkAdmin();
 }
 
 function searchLocal() {
@@ -21,6 +23,24 @@ function searchLocal() {
 	}
 	if (darkmode) {
 		myFunction(doToggle=false);
+	}
+}
+
+function checkAdmin() {
+	admin = localStorage.getItem("admin");
+	if (admin == "true") {
+		admin = true;
+	}
+	else {
+		admin = false;
+	} 
+}
+
+function toggleAdmin() {
+	if (admin) {
+		localStorage.setItem("admin", false);
+	} else {
+		localStorage.setItem("admin", true);
 	}
 }
 
@@ -55,7 +75,9 @@ function toggleClasses(group) {
 			console.log("Selector couldn't find anything for:");
 			console.log(selector);
 			console.log("");
-			alert("Warning: Selector in dmElements.js couldn't find anything for the following:\n" + selector);
+			if (admin) {
+				alert("Warning: Selector in dmElements.js couldn't find anything for the following:\n" + selector);
+			}
 			continue
 		}
 		// Loop through elements
