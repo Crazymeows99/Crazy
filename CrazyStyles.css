@@ -210,20 +210,35 @@ footer 									{text-align: center;
 									width: 100%;
 									height: 6%;
 									font-size:small;}
+
+/* Darkmode
+Note: Add !important to all tags to force the website to use the darkmode settings over the default. 
+I couldn't find a good other way to do it. But this will likely work until it doesn't. Probably...
+
+Warning: Cannot include : in dmElements array. 
+Fix: For hover elements, make a seperate css tag for that element to seperate it from non-hover elements. 
+	> Ex: If using .dark-mode2, can copy it all and change it to .dark-mode2-hover
+     Then make a :hover tag to specify what it should do when hovered over. 
+        > Ex: .dark-mode2-hover:hover
+*/
+
+.dark-mode								{background-color: #313131 !important;
+									color: white !important;
+									background-image: url('pics/background1dm.png') !important;}
 			
-.dark-mode								{background-color: #313131;
-									color: white;
-									background-image: url('pics/background1dm.png');}
+.dark-mode1								{background-image: url('pics/dmbgbox.png') !important;}
 			
-.dark-mode1								{background-image: url('pics/dmbgbox.png');}
-			
-.dark-mode2								{background-color: #af73d8;}
+.dark-mode2								{background-color: #af73d8 !important;}
 
-.dark-mode3								{border-color: #af73d8;}
+.dark-mode2-hover							{background-color: #af73d8 !important;}
 
-.dark-mode4								{color: #54a0ff;}
+.dark-mode2-hover:hover							{background-color: #bf83e8 !important;}
 
-.dark-mode5								{background: #54a0ff;
-									border-color: #af73d8;}
+.dark-mode3								{border-color: #af73d8 !important;;}
 
-.dark-mode6								{background: #3e74b8}
+.dark-mode4								{color: #54a0ff !important;;}
+
+.dark-mode5								{background: #54a0ff !important;
+									border-color: #af73d8 !important;}
+
+.dark-mode6								{background: #3e74b8 !important;}
