@@ -33,8 +33,6 @@ const dmElements = {
 	"#purpleborder12": "dark-mode3",
 	"#jamessays": "dark-mode4",
 	"#hi": "dark-mode4",
-	".::-webkit-scrollbar-thumb": "dark-mode5",
-	".::-webkit-scrollbar-thumb:hover": "dark-mode6",
 	".dropdown-content a": "dark-mode2-hover",
 	".dropdown-content button": "dark-mode2-hover",
 }
@@ -48,6 +46,9 @@ const dmElements = {
 Made: ".dropdown-content a": "dark-mode2",      --into-->    ".dropdown-content a": "dark-mode2-hover",
 and deleted ".dropdown-content a:hover": "dark-mode2",
 
+To Fix:
+".::-webkit-scrollbar-thumb": "dark-mode5",
+".::-webkit-scrollbar-thumb:hover": "dark-mode6",
 
 
 //-------------------------------------------------------------------------------------------------------------------
