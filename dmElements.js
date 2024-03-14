@@ -35,6 +35,8 @@ const dmElements = {
 	"#hi": "dark-mode4",
 	".dropdown-content a": "dark-mode2-hover",
 	".dropdown-content button": "dark-mode2-hover",
+	"::-webkit-scrollbar-thumb": "dark-mode5",
+	"::-webkit-scrollbar-thumb:hover": "dark-mode6",
 }
 
 
