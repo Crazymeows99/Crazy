@@ -8,6 +8,7 @@ const dmElements = {
 */
 
 const dmElements = {
+	"body": "dark-mode",
 	"#JamesBox": "dark-mode1",
 	"#purplebox": "dark-mode2",
 	"#purplebox2": "dark-mode2",
@@ -34,10 +35,15 @@ const dmElements = {
 	"#hi": "dark-mode4",
 	".::-webkit-scrollbar-thumb": "dark-mode5",
 	".::-webkit-scrollbar-thumb:hover": "dark-mode6",
-	".dropdown-content a": "dark-mode2",
-	".dropdown-content a:hover": "dark-mode2",
+	".dropdown-content a": "dark-mode2-hover",
+	".dropdown-content button": "dark-mode2-hover",
 }
 
+
+/*
+Made: ".dropdown-content a": "dark-mode2",      --into-->    ".dropdown-content a": "dark-mode2-hover",
+and deleted ".dropdown-content a:hover": "dark-mode2",
+*/
 
 
 
