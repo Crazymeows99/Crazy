@@ -70,7 +70,7 @@ group = {
 }
 
 // Used in conjunction with dmClasses array (as arg)
-function toggleClasses(group) {
+function toggleDM(toggleType, group) {
 	for (var selector in group) {
 		// Get all elements that match selector
 		const items = document.querySelectorAll(selector);      // look into doc more
@@ -89,8 +89,18 @@ function toggleClasses(group) {
 			if (typeof item != "object") {
 				continue;
 			}
-			// Toggle class
-			item.classList.toggle(group[selector]);
+			// Toggle element
+			if (toggleType == "class") {
+				item.classList.toggle(group[selector]);
+			} 
+			else if (toggleType == "imgSource") {
+				if (darkmode) {
+					item.src = group[selector][1]; 
+				}
+				else {
+					item.src = group[selector][0]; 
+				}
+			}
 		}
 	}
 }
@@ -110,5 +120,6 @@ function myFunction(doToggle=true) {
 	}
 
 	// Darmode Function
-	toggleClasses(dmElements);
+	toggleDM("class", dmElements);
+	toggleDM("imgSource", dmImgSources);
 }
