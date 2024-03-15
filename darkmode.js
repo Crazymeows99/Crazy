@@ -42,8 +42,10 @@ function checkAdmin() {
 
 function toggleAdmin() {
 	if (admin) {
+		admin = false;
 		localStorage.setItem("admin", false);
 	} else {
+		admin = true;
 		localStorage.setItem("admin", true);
 	}
 }
