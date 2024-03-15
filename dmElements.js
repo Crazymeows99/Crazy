@@ -39,6 +39,10 @@ const dmElements = {
 	"::-webkit-scrollbar-thumb:hover": "dark-mode6",
 }
 
+const dmImgSources = {
+	"#purpleborder7": ["pics/Hampter.png", "pics/SnomBG.jpg"]
+}
+
 
 /*
 //-------------------------------------------------------------------------------------------------------------------
