@@ -1,4 +1,5 @@
 
+
 /*
 Example:  
 const dmElements = {
@@ -35,19 +36,23 @@ const dmElements = {
 	"#hi": "dark-mode4",
 	".dropdown-content a": "dark-mode2-hover",
 	".dropdown-content button": "dark-mode2-hover",
+	".overlay": "dark-mode2",
+	
+	
 	"::-webkit-scrollbar-thumb": "dark-mode5",
 	"::-webkit-scrollbar-thumb:hover": "dark-mode6",
 }
 
 const dmImgSources = {
-	"#purpleborder7": ["pics/Hampter.png", "pics/SnomBG.jpg"]
+	"#ClTh": ["pics/Class Titlehead New.png", "pics/ClThDm.png"],
+	"#H": ["pics/Fixed Heart.png", "pics/HDm.png"],
+	"#GalTh": ["pics/Gallery Titlehead.png", "pics/GalThDm.png"],
+	"#MTFTh": ["pics/Meet the Founders Titlehead.png", "pics/MTFThDm.png"],
 }
-
 
 /*
 //-------------------------------------------------------------------------------------------------------------------
 // Notable Changelog
-
 
 Made: ".dropdown-content a": "dark-mode2",      --into-->    ".dropdown-content a": "dark-mode2-hover",
 and deleted ".dropdown-content a:hover": "dark-mode2",
@@ -55,7 +60,6 @@ and deleted ".dropdown-content a:hover": "dark-mode2",
 To Fix:
 ".::-webkit-scrollbar-thumb": "dark-mode5",
 ".::-webkit-scrollbar-thumb:hover": "dark-mode6",
-
 
 //-------------------------------------------------------------------------------------------------------------------
 // Warnings and Notes
@@ -69,47 +73,16 @@ Fix: For hover elements, make a seperate css tag in CrazyStles.css for that elem
      In dmElements.js, add the selector and new tag
         > Ex: ".dropdown-content a": "dark-mode2-hover",
 
-
-
-
 */
 //-------------------------------------------------------------------------------------------------------------------
 
-
-
 /* To Convert:
-
-	element = document.getElementById('ClTh');
-	if (darkmode) {
-		element.src='pics/ClThDm.png';
-		alert("Dark Mode Not Finished")
-	} else {
-		element.src='pics/Class Titlehead New.png';
-	}
 	
-	element = document.getElementById('H');
-	if (darkmode) {
-		element.src='pics/HDm.png';
-	} else {
-		element.src='pics/Fixed Heart.png';
-	}
+	Nav Hovers
 	
-	element = document.getElementById('GalTh');
-	if (darkmode) {
-		element.src='pics/GalThDm.png';
-	} else {
-		element.src='pics/Gallery Titlehead.png';
-	}
+	Scrollbar
 	
-	element = document.getElementById('MTFTh');
-	if (darkmode) {
-		element.src='pics/MTFThDm.png';
-	} else {
-		element.src='pics/Meet the Founders Titlehead.png';
-	}
+	Scrollbar Hovers
 	
-	
-	const element1 = document.getElementByClassName("border");
-	element.classList.toggle("dark-mode3");
 */
 
