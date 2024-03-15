@@ -20,7 +20,6 @@ function searchLocal() {
 	else {
 		darkmode = false;
 		localStorage.setItem("darkmode", false);
-		console.log(localStorage.getItem("admin"));
 	}
 	if (darkmode) {
 		myFunction(doToggle=false);
