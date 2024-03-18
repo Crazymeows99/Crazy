@@ -62,6 +62,7 @@ const messages = [
 	"'youre the clap king jett' -brighton",
 	"jpeg stands for Joint Photographic Experts Group",
 	"brighton be writin", 
-	"brian be lyin"
+	"brian be lyin",
+	"aaand its too late, its already all over the screen.",
 ]
 
