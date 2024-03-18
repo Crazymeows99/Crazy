@@ -61,5 +61,6 @@ const messages = [
 	"Valorant is so doggy doo doo (Just because youre bad at a game doesnt mean the game is bad, Jett.)",
 	"'youre the clap king jett' -brighton",
 	"jpeg stands for Joint Photographic Experts Group",
+	"brighton be writin", 
 ]
 
