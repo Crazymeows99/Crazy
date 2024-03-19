@@ -51,6 +51,20 @@ function toggleAdmin() {
 }
 
 
+
+
+// Darkmode CSS File Toggling
+//---------------------------------------
+function toggleDMCSS() {
+	let sheet = document.getElementById("darkmodeCSS");
+	if (sheet.disabled) {
+		sheet.disabled = false;
+	} else {
+		sheet.disabled = true;
+	}
+}
+
+
 // Darkmode Toggling
 //---------------------------------------
 
