@@ -137,6 +137,7 @@ function myFunction(doToggle=true) {
 	}
 
 	// Darmode Function
+	toggleDMCSS();
 	toggleDM("class", dmElements);
 	toggleDM("imgSource", dmImgSources);
 }
