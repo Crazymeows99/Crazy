@@ -1,5 +1,6 @@
+::-webkit-scrollbar-thumb				{background: #54a0ff; 
+										border-color: #af73d8;}
 
-::-webkit-scrollbar-thumb		        {background: #e320d9; 
-										                 border-color: #bd22b5;}
+::-webkit-scrollbar-thumb:hover			{background: #6060ff;}
 
-::-webkit-scrollbar-thumb:hover			{background: #f514ea;}
+nav ul li:after							{background: #54a0ff;}
