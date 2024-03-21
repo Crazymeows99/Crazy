@@ -8,46 +8,54 @@
 		
 		<Link rel="stylesheet" href="CrazyStyles.css">
 		
+		<link rel="stylesheet" href="darkmode.css" id="darkmodeCSS" disabled>
+		
 		<title>Crazy Shop?</title>
 		
-		<script src="message.js"></script>
+		<script src="dmElements.js"></script>
+		<script src="darkmode.js"></script>
 		
-		<script src="darkMode.js"></script>
-		
-		<script src="clock.js"></script>
-		
-		<script>
-			function startup() {
-				getMessage();
-				toggleDarkMode();
-				clock();
-			}
-		</script>
 	</head> 
 	
-	<body id="top" style="background-image: url('pics/background1.jpg'); text-align: center;" onload="startup()">
+	<body id="top" style="background-image: url('pics/background1.jpg'); text-align: center;" onload="merchStartup()">
 		<article width="100%">
 			<section>
 				<section>
-					<nav>
+				<!--
+				dont forget to change the link back to home if you copy paste the nav bar from Crazy.html
+				-->
+					<nav id="purplebox3">
 						<ul>
+							
 							<li><a href="https://crazymeows99.github.io/Crazy/Crazy.html"><u>Home</u></a></li>
 							
 							<li><a href="https://studentsis.csiu-technology.org/suntech" target="_blank"><u>Gradebook</u></a></li>
 							
 							<li><a href="https://campus.careersafeonline.com/main.k2" target="_blank"><u>CareerSafe</u></a></li>
 							
+							<li><a href="https://labsimapp.testout.com/v6_0_583/index.html" target="_blank"><u>TestOut</u></a></li>
+							
 							<li><a href="https://open.spotify.com/" target="_blank"><u>Spotify</u></a></li>
 							
-							<div style="padding: 0 20px 0 0; margin: -20px 20px 0 0; font-size: 120%" class="dropdown">
-								<button><u>Notes</u></button>
+							<div style="padding: 0 20px 0 0; margin: -20px 20px 0 0" class="dropdown">
+								<button id="purplebutton"><u>Notes</u></button>
 								
 								<div class="dropdown-content">
 									<a href="https://suntechorg-my.sharepoint.com/:w:/g/personal/creed_sun-tech_org/EZRLjKuHYxZDi2W2Ivp7SCsBL5KPA9ja3oacy2N_8pDFrw?e=ixYaGU" target="_blank"><u>C-Tech Notes</u></a>
 									
 									<a href="https://suntechorg-my.sharepoint.com/:w:/g/personal/bvoneida_sun-tech_org/EY7yv_hN1HdHp1YvtfkHjOcBULbjkPsjmjugfiOYFR4qCA" target="_blank"><u>Network+ Notes</u></a>
 									
-									<a href="https://suntechorg-my.sharepoint.com/:f:/g/personal/jstiefel_sun-tech_org/EvVRyy0vC0RFltF1PZ_hToMBVCqNwFk21wFixn1jajoUiA?e=rgt6fh" target="_blank"><u>Justus's notes</u></a>
+									<a href="https://suntechorg-my.sharepoint.com/:f:/g/personal/jstiefel_sun-tech_org/EvVRyy0vC0RFltF1PZ_hToMBVCqNwFk21wFixn1jajoUiA?e=rgt6fh" target="_blank"><u>Justus's Notes</u></a>
+	
+									<a href="https://suntechorg-my.sharepoint.com/:w:/g/personal/bvoneida_sun-tech_org/EaKsuHVfCsFEojs_AskSuTABRfcNbiV6B2uzsfjjhRqC9Q?e=9sOk0p" target="_blank"><u>A+ Notes</u></a>
+								</div>
+							</div>
+							
+							<div style="padding: 0 20px 0 0; margin: -20px 20px 0 0" class="dropdown">
+								<button id="purplebutton1"><u>Settings</u></button>
+								
+								<div class="dropdown-content">
+									<button onclick="myFunction()">Toggle dark mode</button>
 								</div>
 							</div>
 						</ul>
@@ -57,17 +65,17 @@
 			<br />
 			
 			<section>
-				<div style="background-color: #ee3883">
-					<img width="30%" src="pics/Merch Titlehead.png">
+				<div id="purplebox" style="background-color: #ee3883">
+					<img id="MTh" width="30%" src="pics/Merch Titlehead.png">
 				</div>
 				
 				<table width="60%" style="text-align: center; padding: 20px">
 					<tr>
-						<th style="padding: 20px"><img width="100%" src="pics/shopphone1.png" class="border"/></th>
+						<th style="padding: 20px"><img id="purpleborder" width="100%" src="pics/shopphone1.png" class="border"/></th>
 						
-						<th style="padding: 20px"><img width="100%" src="pics/shopshirt1.png" class="border"/></th>
+						<th style="padding: 20px"><img id="purpleborder1" width="100%" src="pics/shopshirt1.png" class="border"/></th>
 						
-						<th style="padding: 20px"><img width="100%" src="pics/shopmug1.png" class="border"/></th>
+						<th style="padding: 20px"><img id="purpleborder2" width="100%" src="pics/shopmug1.png" class="border"/></th>
 					</tr>
 					
 					<tr>
@@ -97,13 +105,13 @@
 			<br />
 		</article>
 	</body>
-	<footer>
+	<footer  id="purplebox6">
 		<table style="font-size: 90%;" width="100%" >
 			<tr>
 				<td width="500px" style="text-align: left; padding-left: .5vw;"><p style="font-size: .9vw">Have Suggestions? Send us an E-mail at <a href="mailto:nwetzel@sun-tech.org" class="a">nwetzel@sun-tech.org</a> or <a href="mailto:jashburn@sun-tech.org" class="a"/>jashburn@sun-tech.org</a></p></td>
 				
 				<td width="20%"><marquee scrollamount="3" behavior="alternate">
-						<img src="pics/newduck.gif" style="margin right: 0px; width: 10%; margin-right: -450px"></marquee></td>
+				<img src="pics/newduck.gif" style="margin right: 0px; width: 10%; margin-right: -450px"></marquee></td>
 	
 				<td width="500px" style="text-align: right; padding-right: .5vw"><p style="font-size: .9vw">Disclaimer: The content on this web page does not represent Sun Area Technical Institute.</p></td>	
 			</tr>
