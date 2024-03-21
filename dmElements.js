@@ -1,5 +1,3 @@
-
-
 /*
 Example:  
 const dmElements = {
@@ -48,6 +46,7 @@ const dmImgSources = {
 	"#H": ["pics/Fixed Heart.png", "pics/HDm.png"],
 	"#GalTh": ["pics/Gallery Titlehead.png", "pics/GalThDm.png"],
 	"#MTFTh": ["pics/Meet the Founders Titlehead.png", "pics/MTFThDm.png"],
+	"#MTh": ["pics/Merch Titlehead.png", "pics/MThDm.png"],
 }
 
 /*
@@ -85,4 +84,3 @@ Fix: For hover elements, make a seperate css tag in CrazyStles.css for that elem
 	Scrollbar Hovers
 	
 */
-
