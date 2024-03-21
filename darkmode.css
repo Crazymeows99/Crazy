@@ -4,3 +4,15 @@
 ::-webkit-scrollbar-thumb:hover			{background: #6060ff;}
 
 nav ul li:after							{background: #54a0ff;}
+
+button									{background-color: #ee3883;
+										color: white;}
+			
+.button									{background-color: #ee3883;
+										color: black;}
+			
+.button									{background-color: #af73d8;
+										color: white;}
+			
+.button:hover							{background-color: #54a0ff;
+										color: white;}
