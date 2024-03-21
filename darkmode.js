@@ -8,6 +8,11 @@ function startup() {
 	checkAdmin();
 }
 
+function merchStartup() {
+	searchLocal();
+	checkAdmin();
+}
+
 function searchLocal() {
  	// Darkmode Toggle
 	darkmode = localStorage.getItem("darkmode");
