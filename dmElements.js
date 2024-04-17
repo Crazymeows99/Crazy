@@ -47,6 +47,7 @@ const dmImgSources = {
 	"#GalTh": ["pics/Gallery Titlehead.png", "pics/GalThDm.png"],
 	"#MTFTh": ["pics/Meet the Founders Titlehead.png", "pics/MTFThDm.png"],
 	"#MTh": ["pics/Merch Titlehead.png", "pics/MThDm.png"],
+	"#GTh" : ["pics/Games Titlehead.png", "pics/Games Titlehead DM.png"],
 }
 
 /*
