@@ -65,5 +65,7 @@ const messages = [
 	"brian be lyin",
 	"aaand its too late, its already all over the screen.",
 	"Jesse has wormy worms.",
+	"Have you heard of wabungus the fish? it is not a story the goon squad would tell",
+	"What the Sigma?",
 ]
 
