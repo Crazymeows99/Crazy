@@ -6,6 +6,7 @@ function getMessage() {
 
 const messages = [
 	"...",
+	"I'm on your walls. :)",
 	"We've been trying to contact you reguarding your cars extended warranty.",
 	"Quack!",
 	"Hi!", 
