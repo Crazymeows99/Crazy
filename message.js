@@ -46,8 +46,16 @@ const messages = [
 	"Wabungus",
 	"ERROR CODE: ID: 10T",
 	"Valorant is so doggy doo doo (Just because youre bad at a game doesnt mean the game is bad, Jett.)",
-	"'youre the clap king jett' -brighton",
+	"'youre the clap king jett' -Brighton",
 	"Have you heard of wabungus the fish? it is not a story the goon squad would tell",
 	"What the Sigma?",
+	"dinked 140",
+	"'I wear the same underwear every day' -Blake",
+	"Metro Groomin",
+	"What is the most groundbreaking invention? A shovel.",
+	"Want to hear the joke about the germ? Nvm I don't want to spread it",
+	"Why did the math book feel so sad? Because it was full of problems",
+	"Why don't skeletons fight each other? Because they don't have the guts",
+	"Why did the computer get glasses? To improve its website.",
 ]
 
