@@ -2,7 +2,7 @@ body									{padding: 25px;
 										background-color: #92664A;
 										color: #FFD700;
 										font-size: 25px;
-										background-image: url('pics/wood-unfinished.gif');
+										background-image: url('pics/backgroundTH.gif');
 										background-repeat: no-repeat;
 										background-attachment: fixed;
 										background-size: cover;
@@ -17,13 +17,13 @@ table									{margin-left: auto;
 										font-size: 100%;
 										color: #FFD700;
 										cursor: pointer;
-										background-color: #92664A;
+										background-color: #663a82;
 										border-radius: 10px;
 										border-style: solid;
 										border-width: 5px;
 										border-color: #FFD700}
 
-.button:hover							{background-color: #654321}
+.button:hover							{background-color: #52307c}
 
-.button:active							{background-color: #654321;
+.button:active							{background-color: #52307c;
 										transform: translateY(5px);}
